@@ -1,0 +1,18 @@
+#navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	display: inline;
+}
+
+#title {
+	text-align: center;
+	color: blue;
+}
+
+#subtitle {
+	text-align: center;
+}
