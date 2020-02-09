@@ -1,0 +1,10 @@
+/* the -c is for color */
+.proj-active-c {
+	color: green;
+	font-weight: bold;
+}
+
+.proj-inactive-c {
+	color: red;
+	font-weight: bold;
+}
