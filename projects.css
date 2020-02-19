@@ -8,3 +8,15 @@
 	color: red;
 	font-weight: bold;
 }
+
+.proj-complete-c {
+	color: green;
+}
+
+.proj-discontinued-c {
+	color: yellow;
+}
+
+.proj-abandoned-c {
+	color: red;
+}
