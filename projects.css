@@ -1,3 +1,17 @@
+.show-just-active-button {
+	font-weight: bold;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.refresh-button {
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+
 /* the -c is for color */
 .proj-active-c {
 	color: green;
