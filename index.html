@@ -3,21 +3,50 @@
 	<head>
 		<title>Eric Schneider</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 		<link rel=stylesheet type="text/css" href="stylesheet.css">
 	</head>
 	<body>
-		<ul id="navigation">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="resume.pdf">Resume</a></li>
-		</ul>
-		<h1 id="title">Eric Schneider</h1>
-		<h2 id="subtitle">Student at UNC Chapel Hill</h2>
-		<p>My name is Eric Schneider (he/him). Welcome to my website.</p>
-		<img src="eric.png" alt="A picture of myself" width="500" height="600">
-		<p>I am a student at the University of North Carolina at Chapel Hill. I am a double major in Computer Science (BS) and Mathematics (BS). I am curently a rising sophmore.</p>
-		<p>This website is pretty barebones, since web design is not my thing and I didn't want to use a tool. It's also lacking because I'm not very interesting. Anyway, you can learn more about me by clicking any of the links above.</p>
+		<section class="hero is-info is-bold">
+			<div class="hero-head">
+				<nav class="navbar is-dark">
+					<div class="navbar-menu is-active">
+						<div class="navbar-start">
+							<a href="index.html" class="navbar-item">Home</a>
+							<a href="about.html" class="navbar-item">About</a>
+							<a href="projects.html" class="navbar-item">Projects</a>
+							<a href="contact.html" class="navbar-item">Contact</a>
+							<a href="resume.pdf" class="navbar-item">Resume</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">Eric Schneider</h1>
+					<h2 class="subtitle">Student at UNC Chapel Hill</h2>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-narrow">
+						<figure class="image is-128x128">
+							<img src="eric.png" class="is-rounded" alt="A picture of myself">
+						</figure>
+					</div>
+					<div class="column">
+						<div class="box">
+							<div class="content">
+								<p>My name is <strong>Eric Schneider</strong> (<em>he/him</em>). Welcome to my website.</p>
+								<p>I am a student at the University of North Carolina at Chapel Hill. I am a double major in Computer Science (BS) and Mathematics (BS). I am curently a sophmore.</p>
+								<p>This website is perpetually a work-in-progress, but it's mostly up-to-date. Anyway, you can learn more about me by clicking any of the links above.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
