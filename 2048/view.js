@@ -47,7 +47,7 @@ export function createBase() {
 }
 
 function createBoard(boardVals){ // This only supports 4x4 lol
-    return $('<table>').addClass('table is-fullwidth tile is-ancestor is-vertical').attr('id', 'board-table').append(
+    return $('<table>').addClass('table is-fullwidth tile is-ancestor is-vertical').append(
         $('<tr>').addClass('tile is-parent').append(
             $('<td>').html(createTile(boardVals[0]))
         ).append(

@@ -39,24 +39,6 @@ $(document).ready(() => {
         }
     });
 
-		/*$('#board-table').on("swipe", (e) => {
-			e.preventDefault();
-			switch(event.detail.direction){
-				case "left":
-					g.move('left');
-					break;
-				case "right":
-					g.move('right');
-					break;
-				case "up":
-					g.move('up');
-					break;
-				case "down":
-					g.move('down');
-					break;
-			}
-		});*/
-
     // This is here to prevent the window going down
     $(document).keyup((e) => e.preventDefault());
     $(document).keypress((e) => e.preventDefault());
