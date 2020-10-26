@@ -39,7 +39,7 @@ $(document).ready(() => {
         }
     });
 
-		$('#board-table').on("swipe", (e) => {
+		/*$('#board-table').on("swipe", (e) => {
 			e.preventDefault();
 			switch(event.detail.direction){
 				case "left":
@@ -55,7 +55,7 @@ $(document).ready(() => {
 					g.move('down');
 					break;
 			}
-		});
+		});*/
 
     // This is here to prevent the window going down
     $(document).keyup((e) => e.preventDefault());
