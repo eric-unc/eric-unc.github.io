@@ -5,6 +5,7 @@ $(document).ready(function(){
 	});
 
 	$('button.refresh-button').click(function(){
-		location.reload(true);
+		$('button.refresh-button').css('display', 'none');
+		$('li.proj-inactive, button.show-just-active-button').css('display', '');
 	});
 });
