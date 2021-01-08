@@ -1,22 +1,3 @@
-#navigation {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#navigation li {
-	display: inline;
-}
-
-#title {
-	text-align: center;
-	color: blue;
-}
-
-#subtitle {
-	text-align: center;
-}
-
 .show-just-active-button {
 	font-weight: bold;
 	display: block;
@@ -37,19 +18,17 @@
 	font-weight: bold;
 }
 
-.proj-inactive-c {
-	color: red;
-	font-weight: bold;
-}
-
 .proj-complete-c {
 	color: green;
+	font-weight: bold;
 }
 
 .proj-discontinued-c {
 	color: yellow;
+	font-weight: bold;
 }
 
 .proj-abandoned-c {
 	color: red;
+	font-weight: bold;
 }
