@@ -1,5 +1,8 @@
 .show-just-active-button {
 	font-weight: bold;
+}
+
+.show-just-active-buttons button {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
