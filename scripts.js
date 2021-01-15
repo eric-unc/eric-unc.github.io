@@ -1,6 +1,6 @@
 $(document).ready(() => {
 	/// Contact
-	$('a.copyemail').click(() => {
+	$('.copyemail').click(() => {
 		let emailAddress = "u164" + "" + "33" + "64@live" + "." + "unc.edu";
 
 		navigator.clipboard.writeText(emailAddress).then(() => {
