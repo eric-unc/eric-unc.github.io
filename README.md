@@ -1,2 +1,4 @@
 # Website
-This is my website! It's very basic, since I'm not great at web design and CSS. It has plenty of good information though. [Here](https://eric-unc.github.io/) is the front page.
+This is my website! It's pretty basic, but it looks decent. It has plenty of good information about me. [Here](https://eric-unc.tech) is the front page.
+
+This site uses [Bulma](https://github.com/jgthms/bulma) for styling and [jQuery](https://github.com/jquery/jquery) for scripting.
