@@ -30,7 +30,7 @@
 		<section class="section">
 			<div class="content">
 				<p>This is a list of all of my projects. This list is not always up-to-date, and yes, it's very long. For a more succinct and useful version, look at my resume instead. This is basically a very expanded version of that.</p>
-				<p>This page was last updated on August 5th, 2021, although I'd like to update it again soon.</p>
+				<p>This page was last updated on August 15th, 2021.</p>
 				<div class="show-just-active-buttons">
 					<button class="show-just-active-button button" type="button">What am I working on now?</button>
 					<br />
@@ -50,7 +50,7 @@
 				</div>
 				<button class="refresh-button button" type="button">&#8634;</button>
 				<br /> <!-- This is just to have a space under the button. -->
-				<p>The difference between a project being discontinued, abandoned, or complete is somewhat philosophical rather than concrete, so there's just a filter in regards to what I'm actively working on.</p>
+				<p>The difference between a project being discontinued, abandoned, or complete is somewhat philosophical rather than concrete, so there's just a filter in regard to what I'm actively working on.</p>
 			</div>
 		</section>
 		<section class="section">
@@ -72,6 +72,7 @@
 							proj-rust					// Rust
 							proj-hardware				// Hardware
 					-->
+					<li class="proj-inactive proj-java">decoderflink. decoderlink is a component of <a href="https://www.vmware.com/products/uhana.html">VMware Uhana</a>, which is a rewritten/refactored part of the decoder. VMware Uhana is a tool for providing real-time telecommunication performance analysis, which uses machine learning and AI to diagnose problems. <a href="https://www.youtube.com/watch?v=ld8j2N2BEDA">This video</a> explains it better than I can. Anyway, the decoder part transforms a big data stream of various format into a unified format (protobufs); it was originally written using Kafka Streams, and I ported it/rewrote it to use Apache Flink. Unfortunately, it is a proprietary project, so I cannot share any source code. Project status: <span class="proj-complete-c">Complete</span>.
 					<li class="proj-active proj-mw proj-html"><a href="https://ftb.gamepedia.com/FTB_Wiki">Official FTB Wiki</a>. Basically, the Official FTB Wiki is an online publicly edited wiki that documents the world of modded Minecraft, including mods, modpacks, and other third-party content for Minecraft. I've poured a lot of time into this one. In 2014, I started documenting my own mod (Nuclear Control 2), and I got so far into documenting that I started documenting other people's mods. Now I'm an administrator and I have over 50,000 edits on the wiki. I used to edit each day and make a lot of new articles. Nowadays, not so much. However, I still check up on it and do administrative tasks. Contributing to the wiki has involved:
 					<ul>
 						<li>Writing and editing content in an encyclopedic tone using MediaWiki.</li>
@@ -92,10 +93,11 @@
 			<div class="content">
 				<h3 class="subtitle">2021</h3>
 				<ul>
-					<li class="proj-inactive proj-java">decoderflink. decoderlink is a component of <a href="https://www.vmware.com/products/uhana.html">VMware Uhana</a>, which is a rewritten/refactored part of the decoder. VMware Uhana is a tool for providing real-time telecommunication performance analysis, which uses machine learning and AI to diagnose problems. <a href="https://www.youtube.com/watch?v=ld8j2N2BEDA">This</a> explains it better than I can. Anyway, the decoder part transforms a big data stream of various format into a unified format (protobufs); it was originally written using Kafka Streams, and I ported it to use Apache Flink. Unfortunately, it is a proprietary project, so I cannot share any source code. Project status: <span class="proj-active-c">Working on</span>.</li> <!-- May -->
+					<li class="proj-active proj-rust"><a href="https://github.com/eric-unc/psil">Psil</a>. Psil is a work-in-progress Lisp-like programming language, which uses Limp as a prototype. <span class="proj-active-c">Working on</span>.</li> <!-- June -->
+					<li class="proj-inactive proj-java">decoderflink. decoderlink is a component of <a href="https://www.vmware.com/products/uhana.html">VMware Uhana</a>, which is a rewritten/refactored part of the decoder. VMware Uhana is a tool for providing real-time telecommunication performance analysis, which uses machine learning and AI to diagnose problems. <a href="https://www.youtube.com/watch?v=ld8j2N2BEDA">This video</a> explains it better than I can. Anyway, the decoder part transforms a big data stream of various format into a unified format (protobufs); it was originally written using Kafka Streams, and I ported it/rewrote it to use Apache Flink. Unfortunately, it is a proprietary project, so I cannot share any source code. Project status: <span class="proj-complete-c">Complete</span>.</li> <!-- May -->
                     <li class="proj-inactive proj-rust"><a href="https://devpost.com/software/limp">Limp</a>. Limp is a a Lisp-like programming language implemented in Rust I made for PackHacks 2021, with some contributions from Chongyi Zheng. I really wanted to create a language from scratch, as well as get some more Rust use. The language is very much a toy language, missing many important constructs, but it has a few powerful features, including conditionals, boolean logic, basic integer/float operations, and bitwise operations. I would like to add a bit more to it, but it is considered complete as a prototype and a toy language. GitHub <a href="https://github.com/eric-unc/limp">here</a>. Project status: <span class="proj-complete-c">Complete for now</span>.</li> <!-- March -->
 					<li class="proj-inactive proj-java"><a href="https://github.com/eric-unc/520-compiler">miniJava Compiler</a>. This was a school project to create a compiler for a subset of Java. My compiler supports basic integer and boolean operations, arrays, basic control logic, and some level of OOP. I completed the assignment but did not complete all extra credit parts; there's support for field initialization, constructors, for loops, and some level of broken support for overloading. Although I would like to return to finish overloading, more likely I will start a new compiler at some point. Project status: <span class="proj-complete-c">Effectively complete</span>.</li><!-- Jan -->
-					<li class="proj-active proj-rb"><a href="https://github.com/xbony2/ESAEBSAD3">ESAEBSAD3</a>. This is the third (and hopefully final) iteration of my bot. It is a Discord bot used to manipulate wiki content, as well as do some other stuff. It's written in Ruby and hosted on AWS. Project status: <span class="proj-active-c">Sporadically working on</span>.</li><!-- Jan -->
+					<li class="proj-active proj-rb"><a href="https://github.com/xbony2/ESAEBSAD3">ESAEBSAD3</a>. This is the third (and hopefully final) iteration of my bot. It is a Discord bot used to manipulate wiki content, as well as do some other stuff. It's written in Ruby and hosted on AWS. Project status: <span class="proj-inactive-c">Inactive development</span>.</li><!-- Jan -->
 				</ul>
 				<h3 class="subtitle">2020</h3>
 				<ul>
