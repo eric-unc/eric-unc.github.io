@@ -1,4 +1,42 @@
-# Website
-This is my website! It's pretty basic, but it looks decent. It has plenty of good information about me. [Here](https://eric-unc.tech) is the front page.
+# Nuxt 3 Minimal Starter
 
-This site uses [Bulma](https://github.com/jgthms/bulma) for styling and [jQuery](https://github.com/jquery/jquery) for scripting.
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
+```
+
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
