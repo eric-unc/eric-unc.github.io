@@ -38,27 +38,89 @@
     </section>
     <section class="section">
       <div class="content">
-        {{ projects }}
+        <span v-html="projects"></span>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-function makeProjects() {
-  return "These are the projects ig";
+const projects = [
+  {
+    name: "streakersplit",
+    sect: "Main projects",
+    status: 'inactive',
+    langs: ['java'],
+    desc: "streakersplit is a project for Uhana"
+  },
+  {
+    name: "Official FTB Wiki",
+    link: "https://ftb.fandom.com/wiki/FTB_Wiki",
+    sect: "Main projects",
+    status: 'active',
+    langs: ['mediawiki, web'],
+    desc: "The Official FTB Wiki is..."
+  },
+  {
+    name: "JOS",
+    sect: "2022",
+    status: 'inactive',
+    langs: ['c'],
+    desc: "JOS was cool."
+  }
+]
+
+function makeProjects(filter) {
+  let ret = ""
+
+
+  let sections = []
+  projects.forEach(project => {
+    switch (filter) {
+      case "active":
+        if (project.status !== "active") return;
+        break;
+      case "none":
+        break;
+      default:
+        if (!project.langs.includes(filter)) return;
+        break;
+    }
+
+    if (!sections.includes(project.sect)) {
+      if (sections.length !== 0) ret += "</ul>"
+      ret += "<h3 class=\"subtitle\">Section name</h3>"
+      ret += "<ul>"
+
+      sections.push(project.sect)
+    }
+
+    ret += "<li class=\""
+    ret += project.status === 'active' ? 'proj-active ' : 'proj-inactive '
+    project.langs.forEach(lang => ret += 'proj-' + lang + ' ')
+    ret += "\">"
+    ret += project.link ? "<a href=\"" + project.link + "\">" + project.name + "</a>" : project.name
+    ret += ". " + project.desc
+    ret += "</li>"
+  })
+
+  ret += "</ul>"
+
+  return ret
 }
 
 export default {
   data() {
     return {
-      projects: makeProjects()
+      filter: "none",
+      projects: makeProjects("none")
     }
   },
 
   methods: {
-    filterJava() {
-
+    filterProj(lang) {
+      this.filter = lang;
+      this.projects = makeProjects(this.filter);
     }
   }
 }
