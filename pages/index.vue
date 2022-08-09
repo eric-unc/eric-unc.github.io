@@ -80,7 +80,7 @@ export default {
 
       navigator.clipboard.writeText(emailAddress).then(() => {
         // Successfully copied.
-      }, function () {
+      }, () => {
         console.error("Unable to write to clipboard!");
       });
     }

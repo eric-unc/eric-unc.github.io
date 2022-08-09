@@ -39,8 +39,7 @@
       </div>
     </section>
     <section class="section">
-      <div class="content">
-        <div v-for="section in projects">
+      <div class="content" v-for="section in projects">
           <h3 class="subtitle">{{ section.title }}</h3>
           <ul>
             <li v-for="project in filterProjects(section.projects)">
@@ -52,7 +51,6 @@
               </span>. <span v-html="project.desc"></span>
             </li>
           </ul>
-        </div>
       </div>
     </section>
   </div>
