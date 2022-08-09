@@ -38,36 +38,61 @@
     </section>
     <section class="section">
       <div class="content">
-        <span v-html="projects"></span>
+        <div v-for="section in projects">
+          <h3 class="subtitle">{{ section.title }}</h3>
+          <ul>
+            <li v-for="project in filterProjects(section.projects)">{{ project.name }}</li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+const sections = [
+  "Main projects",
+  "2022"
+]
+
+// Organized by sections here
 const projects = [
   {
-    name: "streakersplit",
-    sect: "Main projects",
-    status: 'inactive',
-    langs: ['java'],
-    desc: "streakersplit is a project for Uhana"
+    // section title
+    title: "Main projects",
+    // the projects in that section
+    projects: [
+      {
+        // name of project
+        name: "streakersplit",
+        // project status ('active' or 'active')
+        status: 'inactive',
+        // array of languages/technologies
+        langs: ['java'],
+        // description
+        desc: "streakersplit is a project for Uhana"
+      },
+      {
+        name: "Official FTB Wiki",
+        // optional: link to project
+        link: "https://ftb.fandom.com/wiki/FTB_Wiki",
+        status: 'active',
+        langs: ['mediawiki, web'],
+        desc: "The Official FTB Wiki is..."
+      },
+    ]
   },
   {
-    name: "Official FTB Wiki",
-    link: "https://ftb.fandom.com/wiki/FTB_Wiki",
-    sect: "Main projects",
-    status: 'active',
-    langs: ['mediawiki, web'],
-    desc: "The Official FTB Wiki is..."
+    title: "2022",
+    projects: [
+      {
+        name: "JOS",
+        status: 'inactive',
+        langs: ['c'],
+        desc: "JOS was cool."
+      }
+    ]
   },
-  {
-    name: "JOS",
-    sect: "2022",
-    status: 'inactive',
-    langs: ['c'],
-    desc: "JOS was cool."
-  }
 ]
 
 function makeProjects(filter) {
@@ -113,15 +138,25 @@ export default {
   data() {
     return {
       filter: "none",
-      projects: makeProjects("none")
+      projects: projects,
     }
   },
 
   methods: {
-    filterProj(lang) {
+    filterProjects(toFilter) {
+      switch (this.filter) {
+        case "active":
+          return toFilter.filter(proj => proj.status === "active")
+        case "none":
+          return toFilter
+        default: // lang filter
+          return toFilter.filter(proj => proj.langs.includes(this.filter))
+      }
+    },
+    /*filterProj(lang) {
       this.filter = lang;
       this.projects = makeProjects(this.filter);
-    }
+    }*/
   }
 }
 </script>
