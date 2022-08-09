@@ -143,8 +143,259 @@ const projects = [
         langs: ['rust'],
         desc: "MagnumVM is a custom process virtual machine that I made for queer_hack 2021, which I worked on alone. It's written in Rust. It's somewhat on the experimental side, but it won 1st Place! In the future, I hope to clean it up, and then make an assembler/compiler targeting it. GitHub <a href=\"https://github.com/eric-unc/magnum\">here</a>. Project status: <span class=\"proj-complete-c\">Complete for now</span>."
       },
+      {
+        name: "The Calculator", // Nov
+        link: "https://devpost.com/software/the-calculator-xo3jau",
+        status: "inactive",
+        langs: ['rust'],
+        desc: "For HackNC 2021, I wanted to do something, but I was busy that weekend. So me and Chongyi Zheng just made a simple calculator in Rust. He made the \"backend\" (the parser/evaluator) and I made the \"frontend\" (the very simple GUI). Even though I spent only about 5 hours of effort on it, I enjoyed learning about the state of the GUI scene in Rust (which is ever-changing). You can try it <a href=\"./hacknc2021\">here</a> using WASM. The web GUI version is slightly different from the native version. You can use the application as a CLI also. GitHub <a href='https://github.com/eric-unc/hacknc2021'>here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Psil", // June
+        link: "https://github.com/eric-unc/psil",
+        status: "active",
+        langs: ['rust'],
+        desc: "Psil is a Lisp-like programming language, which uses Limp as a prototype. It has a standard variety of types (numbers, booleans, strings, symbols, procedures), some composite types (lists, tables), bindings, control logic, mix of functional/procedural programming, a native documentation generator (like Javadocs), and a decently sized standard library (currently over 50 built-in procedures). <span class=\"proj-active-c\">Working on, sporadically</span>."
+      },
+      {
+        name: "decoderflink", // May
+        status: "inactive",
+        langs: ['java'],
+        desc: "Limp is a Lisp-like programming language implemented in Rust I made for PackHacks 2021, with some contributions from Chongyi Zheng. I really wanted to create a language from scratch, as well as get some more Rust use. The language is very much a toy language, missing many important constructs, but it has a few powerful features, including conditionals, boolean logic, basic integer/float operations, and bitwise operations. It is succeeded by Psil. GitHub <a href=\"https://github.com/eric-unc/limp\">here</a>."
+      },
+      {
+        name: "miniJava Compiler", // Jan
+        link: "https://github.com/eric-unc/520-compiler",
+        status: "inactive",
+        langs: ['java'],
+        desc: "This was a school project to create a compiler for a subset of Java. My compiler supports basic integer and boolean operations, arrays, basic control logic, and some level of OOP. I completed the assignment but did not complete all extra credit parts; there's support for field initialization, constructors, for loops, and some level of broken support for overloading. Although I would like to return to finish overloading, more likely I will start a new compiler at some point. Project status: <span class=\"proj-complete-c\">Effectively complete</span>."
+      },
+      {
+        name: "ESAEBSAD3", // Jan
+        link: "https://github.com/xbony2/ESAEBSAD3",
+        status: "inactive",
+        langs: ['ruby', 'sql'],
+        desc: "This is the third (and hopefully final) iteration of my bot. It is a Discord bot used to manipulate wiki content, as well as do some other stuff. It's written in Ruby and hosted on Heroku, with a PostgreSQL database to log (and potentially undo) actions. Project status: <span class=\"proj-active-c\">Working on, sporadically</span>."
+      },
     ]
   },
+  {
+    title: "2020",
+    projects: [
+      {
+        name: "SAP-1", // Dec
+        status: "inactive",
+        langs: ['hardware'],
+        desc: "This was a hardware project to create <a href=\"https://eater.net/8bit\">an 8-bit computer</a>. If it is ever finished, I hope to upload many pictures of it. I originally started on it during the 2020 break, but haven't really touched it since. It's about 75% complete. You can see a picture of it <a href=\"computer.jpg\">here</a>. Project status: <span class=\"proj-abandoned-c\">On hiatus</span>."
+      },
+      {
+        name: "BetterThanVim", // Dec
+        link: "https://devpost.com/software/betterthanvim",
+        status: "inactive",
+        langs: ['rust'],
+        desc: "BetterThanVim is an <code>ed</code>-like command line command-based text editor that I made for queer_hack 2020. This was a conceptual idea that was especially interesting to me, so I decided to work on it alone. It's written in Rust. I consider this to be finished since it works and completes the general concept. GitHub <a href=\"https://github.com/eric-unc/queerhack2020\">here</a>. Project status: <span class=\"proj-complete-c\">Effectively complete</span>."
+      },
+      {
+        name: "Tar Heel Calendar", // Nov
+        link: "https://tar-heel-calendar.herokuapp.com/",
+        status: "inactive",
+        langs: ['web', 'sql'],
+        desc: "This was created by me, Victoria Hoffman, Alfred Mathew, and Ezri White for our COMP 426: Modern Web Programming final. It is a calendar/scheduling website. Because it's on Heroku, it may take a while to come online if it hasn't been used in a while. The frontend uses HTML5, React.js, Bulma, and axios, while the backend (which I was in charge of) uses Node.js, express, MariaDB, the mysql NPM package, and Heroku. The GitHub is <a href=\"https://github.com/calendar-gang/tar-heel-calendar\">here</a>.  Project status: <span class=\"proj-inactive-c proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "COMP 211: Systems Fundamentals (fall 2020) website", // Nov
+        link: "https://comp211-20f.github.io/",
+        status: "inactive",
+        langs: ['web'],
+        desc: " This was created by me, Dylan Binley, and Cindy Wang for our COMP 227: Effective Peer Tutoring final project. It is a website for the course, with links to all the lectures and resources, plus some extra resources. It's a static website, using HTML/CSS/JS and Bulma. GitHub <a href=\"https://github.com/comp211-20f/comp211-20f.github.io\">here</a> (currently private). Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Mad Muzzic", // Oct
+        link: "https://devpost.com/software/mad-muzzic",
+        status: "inactive",
+        langs: ['html', 'python'],
+        desc: "This is a website created by me, Anand Hande, and Leonard Zhang for HackNC. It allows users to upload a midi file, using machine learning to generate a continuation of it. It wasn't really finished (and we did not win), because we put too much importance into getting a goodnight's sleep, but it was interesting to make. On the frontend, which I was in charge of, we used HTML5, React.js, and Bulma, and on the backend, we used Python, Flask, Music21, Keras, and Google Cloud. GitHub <a href=\"https://github.com/eric-unc/hacknc2020\">here</a>. Project status: <span class=\"proj-complete-c\">Complete</span> (we're done with it, effectively)."
+      },
+      {
+        name: "Newton's Law of Cooling", // June
+        link: "https://github.com/eric-unc/MATH-383L-final",
+        status: "inactive",
+        langs: ['matlab'],
+        desc: "This was the final project for my laboratory for differential equations. It's an 11-page paper, presentation, and GitHub repo (with coding in MATLAB). The GitHub has links to the other components of the project in the README. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Breath", // late Jan
+        link: "https://globalgamejam.org/2020/games/breath-8",
+        status: "inactive",
+        langs: ['csharp'],
+        desc: "This is a game made in Unity (using C#) which is a submission to the Global Game Jam (2020). The goal is to not run out of oxygen. Farts lower the oxygen level by a lot. Having the mouth closed will slowly deplete oxygen, while having it open (use the space bar) will slowly bring it back. The longer you last the better your score. It's a bit like Floppy Bird. This was made by me, Richard Pan, and Dylan Binley. I did much of the code and I Photoshopped some assets. GitHub <a href=\"https://github.com/eric-unc/GGJ2020\">here</a>. The GitHub is more updated than the GGJ entry since Richard made some last-minute improvements before we had to present. We probably weren't the best game in the room but we used Unity for the first time and so gained some Unity/C# experience. And like most hackathons, about 10% of the time allocated went to actually working, with 90% of the time going to sleeping, eating, goofing off, pretending to work, going to workshops, etc. Oh well. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "This website!", // Jan
+        status: "active",
+        langs: ['web'],
+        desc: "Originally was written in HTML/CSS/JS with jQuery, now being migrated to using Nuxt.js/Vue. Styled with Bulma, hosted using GitHub Pages. GitHub <a href=\"https://github.com/eric-unc/eric-unc.github.io\">here</a>. Project status: <span class=\"proj-active-c\">Migration/updating is ongoing.</span>."
+      },
+    ]
+  },
+  {
+    title: "2019",
+    projects: [
+      {
+        name: "Conway's Game", // Nov
+        link: "https://github.com/eric-unc/a8-conway-the-gamer",
+        status: "inactive",
+        langs: ['java'],
+        desc: "Made in Java Swing. This was an extra credit assignment for COMP 401. Although most school assignments aren't noteworthy, I think this one is since I made it from scratch and it has a bunch of cool options. Unfortunately it doesn't work very well in large sizes. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Ball Game", // Nov
+        link: "https://github.com/eric-unc/401hackathon",
+        status: "inactive",
+        langs: ['java'],
+        desc: "his is a Java Swing game where the player shoots at ten balls to get points. This was made for a hackathon just for COMP 401 students. We (me, Dylan Binley, Anand Hande) didn't win, probably because the game is genuinely difficult, not super intuitive, and we didn't have time to make it aesthetically pleasing. The gravity is pretty cool. Made in &lt;12 hours. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Language Fun",
+        link: "https://github.com/a8675309/HackNCSilentDisco0",
+        status: "inactive",
+        langs: ['java'],
+        desc: "This is an Android app that we (me, Anand Hande, Dylan Binley) made for HackNC. It's our first Android app. The app lets you practice the top 100 most common words in Spanish and French. It's not really complete, and not released anywhere. We did not win. Made in 24 hours (minus when we slept and goofed off) in Java. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "Coabot", // before June?
+        link: "https://gist.github.com/xbony2/28908b42ec3851c6141787dd81ff1bbf",
+        status: "inactive",
+        langs: ['ruby'],
+        desc: "It's an exercise planner made in Ruby made for personal use. I never really used it though. I believe I made since I wasn't busy enough in my online art appreciation class. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+    ]
+  },
+  {
+    title: "2018",
+    projects: [
+      {
+        name: "ESAEBSAD2", // Feb
+        link: "https://github.com/xbony2/ESAEBSAD2",
+        status: "inactive",
+        langs: ['java'],
+        desc: "A Discord bot written in Groovy to replace ESAEBSAD. I technically started this in early 2018 but didn't really do much until late 2019. Unfortunately the dependencies I relied on no longer function, so I decided to create an ESAEBSAD3. "
+      }
+    ]
+  },
+  {
+    title: "2017",
+    projects: [
+      {
+        name: "Gamepedia Rapid Anti-Spam Patrol (GRASP)", // Sep
+        link: "https://help.fandom.com/wiki/Gamepedia_Rapid_Anti-Spam_Patrol",
+        status: "inactive",
+        langs: ['mediawiki'],
+        desc: "This was an initiative across Gamepedia to revert vandalism (and rarely spam) across wikis. I was appointed a GRASP member. When I was active I patrolled like 10-20 wikis a day to check for vandalism. Project status: <span class=\"proj-abandoned-c\">Inactive</span>."
+      },
+      {
+        name: "Long Fall Boots", // Aug
+        link: "https://www.curseforge.com/minecraft/mc-mods/long-fall-boots",
+        status: "inactive",
+        langs: ['java'],
+        desc: "Ported/recreated small mod from Minecraft 1.11 to 1.12.2 in Java, and from 1.14 to 1.15/1.16.1/1.16.4/1.17.1/1.18. GitHub <a href=\"https://github.com/xbony2/Long-Fall-Boots\">here</a>. Project status: <span class=\"proj-complete-c\">Complete</span> (until the next update)."
+      },
+      {
+        name: "HuesoDeWiki", // Jan
+        link: "https://www.curseforge.com/minecraft/mc-mods/huesodewiki",
+        status: "inactive",
+        langs: ['java'],
+        desc: "HuesoDeWiki is a Minecraft mod created by me in Java to create a base page of blocks and items in the game. It also has a command to copy structures in a <a href=\"https://ftb.fandom.com/wiki/Template:Cg/Multiblock/Alt\">{{Cg/Multiblock/Alt}}</a> format, but Hubry made that part. GitHub <a href=\"https://github.com/xbony2/HuesoDeWiki\">here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+    ]
+  },
+  {
+    title: "2016",
+    projects: [
+      {
+        name: "BlockRenderer", // Dec
+        link: "https://www.curseforge.com/minecraft/mc-mods/blockrenderer",
+        status: "inactive",
+        langs: ['java'],
+        desc: "BlockRenderer is a Minecraft mod created by unascribed used to dump renders of blocks and items. We use it at the FTB Wiki to make tilesheets. I ported the mod from Minecraft 1.10 to 1.11. I was working on porting it from Minecraft 1.12 to 1.15 but someone beat me to it. GitHub <a href=\"https://github.com/xbony2/BlockRenderer\">here</a> (my fork). Project status: <span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+      {
+        name: "Bonemealable babies", // Aug
+        link: "https://www.curseforge.com/minecraft/mc-mods/bonemealable-babies",
+        status: "inactive",
+        langs: ['java'],
+        desc: "This is a small joke mod for Minecraft written in Java (there was a test port in Groovy, but it had issues) that allows baby animals to be grown by right-clicking them with Bone Meal. Now updated to the latest version of Minecraft. GitHub <a href=\"https://github.com/xbony2/Bonemealable-babies\">here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "BunnyTech", // Aug
+        link: "https://github.com/elifoster/TheModdingTrials",
+        status: "inactive",
+        langs: ['java'],
+        desc: "BunnyTech is a small Minecraft mod made in Java by me and Eli Foster during The Modding Trials, a mod-making competition. I tried to make a TESLA-based Basic Generator (which burned Coal) but it didn't work. Eli successfully made a <a href=\"https://ftb.fandom.com/wiki/Bunny%27s_Tail\">Bunny's Tail</a> that lets the player jump. We didn't win. Project status: <span class=\"proj-complete-c\">Complete</span>/<span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+      {
+        name: "ATT-9001", // Jun
+        link: "https://github.com/FTB-Gamepedia/ATT-9001",
+        status: "inactive",
+        langs: ['ruby'],
+        desc: "AKA the Auto Tile Translator 9001. This a tool made in Ruby for the FTB Wiki. Given language files from a mod, it will automatically translate tiles registered on the wiki based on those official translations. It supports both <code>.lang</code> and <code>.json</code> files. Project status: <span class=\"proj-complete-c\">Complete</span>."
+      },
+      {
+        name: "World Control", // May
+        link: "https://www.curseforge.com/minecraft/mc-mods/world-control",
+        status: "inactive",
+        langs: ['java'],
+        desc: "World Control was a Minecraft mod written in Java that was a recreation of Nuclear Control 2 for Minecraft 1.10 and 1.12, and without requiring IC2. I was the project manager more or less, although dmf444 has probably taken more initiative than me. Zuxelus started his own fork of the original Nuclear Control called <a href=\"https://www.curseforge.com/minecraft/mc-mods/energy-control\">Energy Control</a>, which is the unofficial replacement for this mod, since me and the other developers didn't have enough time to work on it. GitHub <a href=\"https://github.com/World-Control-Team/World-Control\">here</a>. Project status: <span class=\"proj-discontinued-c\">Discontinued</span>."
+      },
+      {
+        name: "The Madness of Little Emma Wiki",
+        link: "https://tmole.gamepedia.com/The_Madness_of_Little_Emma_Wiki",
+        status: "inactive",
+        langs: ['mediawiki'],
+        desc: "This is a wiki that I was the administrator of for a period of time, gaining a bit more than 1500 edits. I made templates and many pages. I am no longer involved. The game is an indie game, not especially popular, and not being updated anymore. I don't think anyone plays it nowadays. So yeah, I don't see much of a reason to return to the wiki.  Project status: <span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+      {
+        name: "Gadget-toolbar.js", // Feb
+        link: "https://ftb.fandom.com/wiki/MediaWiki:Gadget-toolbar.js",
+        status: "inactive",
+        langs: ['mediawiki', 'web'],
+        desc: "This is a MediaWiki Gadget written in JavaScript that expands the default WikiEditor to include templates commonly used on the FTB Wiki (infoboxes, crafting grids, etc). Currently retired because Fandom moved to a simpler source editor. Project status: <span class=\"proj-complete-c\">Complete</span>/<span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+    ]
+  },
+  {
+    title: "2015",
+    projects: [
+      {
+        name: "autosummary.js", // Oct
+        link: "https://ftb.fandom.com/wiki/User:Xbony2/common/autosummary.js",
+        status: "inactive",
+        langs: ['mediawiki', 'web'],
+        desc: "This used to be a pretty basic script, but I made it more powerful in 2019. Basically, you can set a default edit summary which is saved via cookies to be used whenever you edit, and you can also toggle that to be on or off as desired. Also, if creating a new page, and there's no summary, it will make the default summary \"created page\" (which was the original use). Made in JavaScript. Currently retired because it no longer works with the latest version of MediaWiki/the Fandom platform. Project status: <span class=\"proj-complete-c\">Complete</span>/<span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+      {
+        name: "MediaWiki::Butt", // Sep
+        link: "https://github.com/FTB-Gamepedia/MediaWiki-Butt-Ruby",
+        status: "inactive",
+        langs: ['ruby'],
+        desc: "MediaWiki::Butt is a Ruby library/gem that makes it easy to perform wiki actions in Ruby. It's created by Eli Foster, with me as a co-author. Mostly I fixed random stuff, but I also added the random articles function and namespace constants. I've used MediaWiki::Butt in ESAEBSAD, ATT-9001, and a bunch of random scripts. Project status: <span class=\"proj-abandoned-c\">Inactively involved</span>."
+      },
+      {
+        name: "AntiEndPortalMod", // Jul
+        link: "https://github.com/xbony2/AntiEndPortalMod",
+        status: "inactive",
+        langs: ['java'],
+        desc: "This is a small Minecraft mod created by me in Java that disables the creation of the End Portal by the Ender Dragon, and makes the Ender Dragon drop its egg as an item. It's for Minecraft 1.7.10. This was made by request of a friend and never officially released. It's currently unmaintained. It's a simple mod but was hard to implement since I had to use a library called <a href=\"https://asm.ow2.io/\">ASM</a> to manipulate the bytecode at runtime. Project status: <span class=\"proj-complete-c\">Complete</span>/<span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+      {
+        name: "Shiny Stones Mod 2", // Jan
+        link: "https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2323075-1-7-10-shinystones-mod-2",
+        status: "inactive",
+        langs: ['java'],
+        desc: "This was a port/recreation of a small mod that I liked from Minecraft 1.6 to 1.7.10. Written in Java. Never was popular; it mostly just adds a few decorative blocks. GitHub <a href=\"https://github.com/xbony2/Shiny-Stones-2-Mod\">here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>/<span class=\"proj-abandoned-c\">Abandoned</span>."
+      },
+    ]
+  }
 ]
 
 function makeProjects(filter) {
