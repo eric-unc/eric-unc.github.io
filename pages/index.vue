@@ -18,7 +18,7 @@
         <div class="columns">
           <div class="column is-narrow">
             <figure class="image is-128x128">
-              <img src="eric.png" class="is-rounded" alt="A picture of myself">
+              <img src="/eric.png" class="is-rounded" alt="A picture of myself">
             </figure>
           </div>
           <div class="column">
