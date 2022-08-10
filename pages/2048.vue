@@ -8,16 +8,17 @@
     </section>
     <section class="section">
       <div class="container">
-        <button class="button is-danger" @click="setup()" v-if="started">Reset</button>
-        <button class="button is-success" @click="setup()" v-else>Start</button>
+        <button class="button is-danger" @click="setup" v-if="started">Reset</button>
+        <button class="button is-success" @click="setup" v-else>Start</button>
       </div>
+      <br />
       <div class="container">
         <table class="table is-fullwidth tile is-ancestor is-vertical">
           <tr class="tile is-parent" v-for="row in board">
             <td v-for="tile in row">
               <div v-if="tile === 0" class="tile is-child image is-64x64 box"></div>
               <div v-else-if="tile > 4096" class="tile is-child image is-64x64 box">
-                {{ tile }}
+                {{ tile }} <!-- this is unlikely, but you never know -->
               </div>
               <figure v-else class="tile image is-64x64">
                 <img :src="getTileImage(tile)" alt="A 2048 tile.">
@@ -30,8 +31,8 @@
         <p>The score is: {{ score }}</p>
       </div>
       <div class="container">
-        <p v-if="over === false">This game is ongoing.</p>
-        <p v-else-if="won === true"><strong>You've won!</strong></p>
+        <p v-if="!over">This game is ongoing.</p>
+        <p v-else-if="won"><strong>You've won!</strong></p>
         <p v-else><strong>You've lost!</strong></p>
       </div>
     </section>
@@ -39,6 +40,9 @@
       <div class="container">
         <div class="notification is-primary">
           <p>Welcome to 2048! To play, use the arrow keys or WASD to move the tiles around the screen. Tiles of the same number will merge, and give you points. Reaching a tile of 2048 will make you win, but if you're really good you can get 4096!</p>
+        </div>
+        <div class="notification is-info">
+          <p>This is written with Vue.js now, like the rest of the website. You can view the original 2048 source code, as written for COMP 426, <a href="https://github.com/eric-unc/eric-unc.github.io/tree/old/2048">here</a>, which used jQuery. Both are stylized with Bulma.</p>
         </div>
       </div>
     </section>
@@ -48,13 +52,13 @@
 <script>
 class Queue { // More or less
   constructor(maxlength){
-    this.array = new Array(maxlength).fill(0);
-    this.curr = 0; // Where to fill queue from
+    this.array = new Array(maxlength).fill(0)
+    this.curr = 0 // Where to fill queue from
   }
 
   enque(val){
-    this.array[this.curr] = val;
-    this.curr++;
+    this.array[this.curr] = val
+    this.curr++
   }
 }
 
@@ -84,51 +88,36 @@ export default {
 
   methods: {
     getTileImage(tile) {
-      let img;
-
       switch(tile){
         case 0: // TODO: don't remember why this is a thing
-          img = "0.jpg"
-          break
+          return "0.jpg"
         case 2:
-          img = "2.jpeg"
-          break
+          return "2.jpeg"
         case 4:
-          img = "4.jpg"
-          break
+          return "4.jpg"
         case 8:
-          img = "8.jpg"
-          break
+          return "8.jpg"
         case 16:
-          img = "16.jpg"
-          break
+          return "16.jpg"
         case 32:
-          img = "32.jpg"
-          break
+          return "32.jpg"
         case 64:
-          img = "64.jpg"
-          break
+          return "64.jpg"
         case 128:
-          img = "128.jpg";
-          break;
+          return "128.jpg";
         case 256:
-          img = "256.jpg"
-          break
+          return "256.jpg"
         case 512:
-          img = "512.jpg"
-          break
+          return "512.jpg"
         case 1024:
-          img = "1024.gif"
-          break
+          return "1024.gif"
         case 2048:
-          img = "2048.jpg"
-          break
+          return "2048.jpg"
         case 4096:
-          img = "4096.jpg"
-          break
+          return "4096.jpg"
+        default:
+          return "0.jpg" // shouldnt get here
       }
-
-      return img
     },
     setup() {
       this.board = createEmptyBoard()
@@ -144,8 +133,7 @@ export default {
     addRandomTile() {
       let opens = this.getOpenTiles()
 
-      if(opens.length === 0)
-        return -1
+      if(opens.length === 0) return
 
       let randomOpen = Math.floor(Math.random() * opens.length)
       let row = opens[randomOpen][0]
@@ -172,7 +160,6 @@ export default {
 
         for(let j = 0; j < 4; j++){
           let n = this.board[i][j]
-
           if(n === 0) continue
 
           if(q.curr !== 0){
@@ -198,15 +185,16 @@ export default {
 
       this.board = newBoard
     },
-    orientCounterclockwise() {
-      let newBoard = createEmptyBoard()
+    orientCounterclockwise(times) {
+      for (let t = 0; t < times; t++) {
+        let newBoard = createEmptyBoard()
 
-      for(let i = 0; i < 4; i++)
-        for(let j = 0; j < 4; j++)
-          newBoard[i][j] = this.board[4 - j - 1][i]
+        for(let i = 0; i < 4; i++)
+          for(let j = 0; j < 4; j++)
+            newBoard[i][j] = this.board[4 - j - 1][i]
 
-
-      this.board = newBoard;
+        this.board = newBoard;
+      }
     },
     move(dir) {
       if (this.over || !this.started) return
@@ -216,33 +204,26 @@ export default {
           this.moveLeft()
           break
         case 'up':
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(3)
           this.moveLeft()
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(1)
           break
         case 'down':
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(1)
           this.moveLeft()
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(3)
           break
         case 'right':
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(2)
           this.moveLeft()
-          this.orientCounterclockwise()
-          this.orientCounterclockwise()
+          this.orientCounterclockwise(2)
           break
       }
 
       this.addRandomTile()
 
       // check if the game is over
-      if(this.getOpenTiles().length > 0)
-        return
+      if(this.getOpenTiles().length > 0) return // not over if there's any open tiles
 
       for(let i = 0; i < this.size; i++)
         for(let j = 0; j < this.size; j++){
@@ -252,10 +233,10 @@ export default {
               n === this.board[i + 1][j] ||
               n === this.board[i][j - 1] ||
               n === this.board[i][j + 1])
-            return
+            return // not over if there is a possible move
         }
 
-      this.over = true
+      this.over = true // otherwise, it is over
     }
   },
 
@@ -285,7 +266,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
