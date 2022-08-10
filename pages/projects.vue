@@ -229,10 +229,10 @@ const projects = [
         desc: "This is a game made in Unity (using C#) which is a submission to the Global Game Jam (2020). The goal is to not run out of oxygen. Farts lower the oxygen level by a lot. Having the mouth closed will slowly deplete oxygen, while having it open (use the space bar) will slowly bring it back. The longer you last the better your score. It's a bit like Floppy Bird. This was made by me, Richard Pan, and Dylan Binley. I did much of the code and I Photoshopped some assets. GitHub <a href=\"https://github.com/eric-unc/GGJ2020\">here</a>. The GitHub is more updated than the GGJ entry since Richard made some last-minute improvements before we had to present. We probably weren't the best game in the room but we used Unity for the first time and so gained some Unity/C# experience. And like most hackathons, about 10% of the time allocated went to actually working, with 90% of the time going to sleeping, eating, goofing off, pretending to work, going to workshops, etc. Oh well. Project status: <span class=\"proj-complete-c\">Complete</span>."
       },
       {
-        name: "This website!", // Jan
+        name: "This website", // Jan
         status: 'active',
         langs: ['web'],
-        desc: "Originally was written in HTML/CSS/JS with jQuery, now being migrated to using Nuxt.js/Vue (specifically Nuxt 3/Vue 3, which uses a bit of TypeScript). Styled with Bulma, hosted using GitHub Pages. GitHub <a href=\"https://github.com/eric-unc/eric-unc.github.io\">here</a>. Project status: <span class=\"proj-active-c\">Migration/updating is ongoing</span>."
+        desc: "Yep! Originally was written in HTML/CSS/JS with jQuery, now migrated to Nuxt.js/Vue.js (specifically Nuxt 3/Vue 3, which uses a bit of TypeScript). Styled with Bulma, hosted using GitHub Pages. GitHub <a href=\"https://github.com/eric-unc/eric-unc.github.io\">here</a>. Project status: <span class=\"proj-active-c\">Some migration/updating is ongoing</span>."
       },
     ]
   },
