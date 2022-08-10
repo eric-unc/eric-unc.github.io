@@ -32,6 +32,9 @@ npm run preview
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
 ## License
-This website is based off of [Nuxt 3's starter template](https://github.com/nuxt/starter/tree/v3). These templates [are licensed under the MIT license](https://github.com/nuxt/starter/blob/readme/LICENSE). To whatever degree the code in this project is considered my own, it is licensed under the [Unlicense](LICENSE), effectively released into the public domain. So, you are welcome to copy my website at will. However, using the website's content to try to misrepresent yourself as me may be considered an illegal act (and would generally be a "dick move").
+To whatever degree the code in this project is considered my own, it is licensed under the [Unlicense](LICENSE), effectively released into the public domain.
 
-(This is not legal advice.)
+Some notes:
+* This website was based off of [Nuxt 3's starter template](https://github.com/nuxt/starter/tree/v3), which is [licensed under the MIT license](https://github.com/nuxt/starter/blob/readme/LICENSE).
+* Some images used on the website are not my own and so may not be relicensed. These images are used for educational purposes under fair use.
+* You are welcome to copy my website at will. However, using the website's content to try to misrepresent yourself as me may be considered an illegal act (not legal advice).

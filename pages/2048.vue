@@ -197,6 +197,65 @@ export default {
       }
 
       this.board = newBoard
+    },
+    orientCounterclockwise() {
+      let newBoard = createEmptyBoard()
+
+      for(let i = 0; i < 4; i++)
+        for(let j = 0; j < 4; j++)
+          newBoard[i][j] = this.board[4 - j - 1][i]
+
+
+      this.board = newBoard;
+    },
+    move(dir) {
+      if (this.over || !this.started) return
+
+      switch(dir){
+        case 'left':
+          this.moveLeft()
+          break
+        case 'up':
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          this.moveLeft()
+          this.orientCounterclockwise()
+          break
+        case 'down':
+          this.orientCounterclockwise()
+          this.moveLeft()
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          break
+        case 'right':
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          this.moveLeft()
+          this.orientCounterclockwise()
+          this.orientCounterclockwise()
+          break
+      }
+
+      this.addRandomTile()
+
+      // check if the game is over
+      if(this.getOpenTiles().length > 0)
+        return
+
+      for(let i = 0; i < this.size; i++)
+        for(let j = 0; j < this.size; j++){
+          let n = this.board[i][j]
+
+          if(n === this.board[i - 1][j] ||
+              n === this.board[i + 1][j] ||
+              n === this.board[i][j - 1] ||
+              n === this.board[i][j + 1])
+            return
+        }
+
+      this.over = true
     }
   },
 
@@ -207,7 +266,19 @@ export default {
       switch(e.code){
         case 'ArrowLeft':
         case 'KeyA':
-          this.moveLeft() // TODO: wip
+          this.move('left')
+          break
+        case 'ArrowRight':
+        case 'KeyD':
+          this.move('right')
+          break
+        case 'ArrowUp':
+        case 'KeyW':
+          this.move('up')
+          break
+        case 'ArrowDown':
+        case 'KeyS':
+          this.move('down')
           break
       }
     })
