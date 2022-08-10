@@ -74,6 +74,10 @@
 
 <script>
 export default {
+  head: {
+    title: "Eric Schneider"
+  },
+
   methods: {
     copyEmail() {
       let emailAddress = "u164" + "" + "33" + "64@live" + "." + "unc.edu";

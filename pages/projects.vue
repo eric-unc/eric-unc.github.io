@@ -465,6 +465,10 @@ const projects = [
 ]
 
 export default {
+  head: {
+    title: "Eric Schneider - Projects"
+  },
+
   data() {
     return {
       filter: "none",
