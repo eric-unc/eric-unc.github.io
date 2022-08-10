@@ -58,7 +58,7 @@
             </ul>
           </li>
         </ul>
-        <p>You can see how I've used this knowledge in <a href="projects.html">the projects I've made</a>.</p>
+        <p>You can see how I've used this knowledge in <a href="./projects">the projects I've made</a>.</p>
         <p>Generally I am quite flexible when it comes to languages and frameworks. I've touched enough of everything to be able to adapt to whatever situation I need to.</p>
         <h2 class="subtitle">Personal</h2>
         <p>I run every day, and I like to lift weights as well. I prefer to run long distances, usually one to two hours a day. I've run six marathons, which I am very proud of.</p>

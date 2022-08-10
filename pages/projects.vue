@@ -198,7 +198,7 @@ const projects = [
         link: "https://tar-heel-calendar.herokuapp.com/",
         status: 'inactive',
         langs: ['web', 'sql'],
-        desc: "This was created by me, Victoria Hoffman, Alfred Mathew, and Ezri White for our COMP 426: Modern Web Programming final. It is a calendar/scheduling website. Because it's on Heroku, it may take a while to come online if it hasn't been used in a while. The frontend uses HTML5, React.js, Bulma, and axios, while the backend (which I was in charge of) uses Node.js, express, MariaDB, the mysql NPM package, and Heroku. The GitHub is <a href=\"https://github.com/calendar-gang/tar-heel-calendar\">here</a>.  Project status: <span class=\"proj-inactive-c proj-complete-c\">Complete</span>."
+        desc: "This was created by me, Victoria Hoffman, Alfred Mathew, and Ezri White for our COMP 426: Modern Web Programming final. It is a calendar/scheduling website. Because it's on Heroku, it may take a while to come online if it hasn't been used in a while. The frontend uses React.js, Bulma, and axios, while the backend (which I was in charge of) uses Node.js, express, MariaDB, the mysql NPM package, and Heroku. The GitHub is <a href=\"https://github.com/calendar-gang/tar-heel-calendar\">here</a>.  Project status: <span class=\"proj-inactive-c proj-complete-c\">Complete</span>."
       },
       {
         name: "COMP 211: Systems Fundamentals (fall 2020) website", // Nov
