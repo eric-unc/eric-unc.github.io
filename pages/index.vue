@@ -53,8 +53,8 @@
           </li>
           <li><span class="has-text-weight-bold">Some</span>:
             <ul>
-              <li>Languages: Lisp, Lua, Python, C#, MATLAB, Mathematica, Bash, Assembly.</li>
-              <li>Tools/frameworks: Heroku, React.js, Node.js, express.js, Bazel, Docker, Kubernetes, Kafka Streams, Make.</li>
+              <li>Languages: Lisp, Lua, Python, C#, MATLAB, Mathematica, Bash, Assembly, TypeScript.</li>
+              <li>Tools/frameworks: Heroku, Bazel, Docker, Kubernetes, Kafka, Kafka Streams, Node.js, Vue.js, Nuxt.js, React.js, express.js,  Make.</li>
             </ul>
           </li>
         </ul>
