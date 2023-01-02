@@ -13,7 +13,7 @@
     <section class="section">
       <div class="content">
         <p>This is a list of all of my projects. This list is sometimes outdated, and yes, it's very long. For a more succinct version, look at my resume instead. This is a very expanded version of that.</p>
-        <p>This page was last updated on December 11th, 2022.</p>
+        <p>This page was last updated on Janaury 2nd, 2023.</p>
         <div v-if="filter === 'none'" class="active-buttons">
           <button class="active-button button" type="button" @click="setFilter('active')">What am I working on now?</button>
           <br />
@@ -23,7 +23,7 @@
             <button class="button is-danger is-light" @click="setFilter('ruby')">Ruby</button>
             <button class="button is-primary is-light" @click="setFilter('web')">HTML/CSS/JS/TS</button>
             <button class="button is-success is-light" @click="setFilter('sql')">SQL</button>
-            <button class="button is-info is-light" @click="setFilter('c')">C/Assembly</button>
+            <button class="button is-info is-light" @click="setFilter('c')">C/C++/Assembly</button>
             <button class="button is-info is-light" @click="setFilter('csharp')">C#</button>
             <button class="button is-warning is-light" @click="setFilter('python')">Python</button>
             <button class="button is-danger is-light" @click="setFilter('matlab')">MATLAB</button>
@@ -117,6 +117,13 @@ const projects = [
   {
     title: "2022",
     projects: [
+      {
+        name: "WorseThanVim", // December
+        link: "https://github.com/eric-unc/WorseThanVim",
+        status: 'inactive',
+        langs: ['c'],
+        desc: "WorseThanVim is a port of BetterThanVim in C++ (from Rust), made over winter break just to prove I know some C++. Project status: <span class=\"proj-complete-c\">Effectively complete</span>."
+      },
       {
         name: "NAShell", // November
         status: 'inactive',
