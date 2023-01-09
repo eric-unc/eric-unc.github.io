@@ -159,7 +159,7 @@ const projects = [
         link: "https://devpost.com/software/the-calculator-xo3jau",
         status: 'inactive',
         langs: ['rust'],
-        desc: "For HackNC 2021, I wanted to do something, but I was busy that weekend. So me and Chongyi Zheng just made a simple calculator in Rust. He made the \"backend\" (the parser/evaluator) and I made the \"frontend\" (the very simple GUI). Even though I spent only about 5 hours of effort on it, I enjoyed learning about the state of the GUI scene in Rust (which is ever-changing). You can try it <a href=\"./hacknc2021\">here</a> using WASM. The web GUI version is slightly different from the native version. You can use the application as a CLI also. GitHub <a href='https://github.com/eric-unc/hacknc2021'>here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>."
+        desc: "For HackNC 2021, I wanted to do something, but I was busy that weekend. So me and Chongyi Zheng just made a simple calculator in Rust. He made the \"backend\" (the parser/evaluator) and I made the \"frontend\" (the very simple GUI). Even though I spent only about 5 hours of effort on it, I enjoyed learning about the state of the GUI scene in Rust (which is ever-changing). You can try it <a href=\"../hacknc2021\">here</a> using WASM. The web GUI version is slightly different from the native version. You can use the application as a CLI also. GitHub <a href='https://github.com/eric-unc/hacknc2021'>here</a>. Project status: <span class=\"proj-complete-c\">Complete</span>."
       },
       {
         name: "Psil", // June
