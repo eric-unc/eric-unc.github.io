@@ -25,8 +25,8 @@
             <div class="box">
               <div class="content">
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
-                <p>I was born in Charlotte, North Carolina, and raised in Weddington, North Carolina. I am a rising graduate student of UNC Chapel Hill, starting my MS in Computer Science in fall 2023.</p>
-                <p>Welcome to my website! It's outdated by a few months... whoops! I promise to update it soon! (June 2023)</p>
+                <p>I was born in Charlotte, North Carolina, and raised in Weddington, North Carolina. I am a current graduate student at UNC Chapel Hill, expected to graduate with my MS in Computer Science in May 2024.</p>
+                <p>Welcome to my website! It's a bit outdated now... whoops! I promise to update it eventually! (June 2023)</p>
               </div>
             </div>
           </div>
