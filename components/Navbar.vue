@@ -4,7 +4,7 @@
       <div class="navbar-start">
         <a href="/" class="navbar-item">Home</a>
         <a href="/projects" class="navbar-item">Projects</a>
-        <a href="/Resume.pdf" class="navbar-item">Resume</a>
+        <a href="/CV.pdf" class="navbar-item">Resume/CV</a>
       </div>
     </div>
   </nav>
