@@ -8,7 +8,7 @@
         <div class="hero-body">
           <div class="container">
             <h1 class="title">Eric Schneider</h1>
-            <h2 class="subtitle">Student at UNC Chapel Hill</h2>
+            <h2 class="subtitle">Student at Virginia Tech</h2>
           </div>
         </div>
       </section>
@@ -25,9 +25,9 @@
             <div class="box">
               <div class="content">
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
-                <p>I was born in Charlotte, North Carolina, and raised in Weddington, North Carolina. I am a current graduate student at UNC Chapel Hill, expected to graduate with my MS in Computer Science in May 2024.</p>
+                <p>I was born in Charlotte, North Carolina, and raised in Weddington, North Carolina. I am currently a first-year PhD student at Virginia Tech, expecting to graduate in 2029.</p>
                 <p>Welcome to my website! It's a bit outdated now... whoops! I promise to update it eventually! (June 2023)</p>
-                <p>I however have recently updated my CV, so feel free to reference that. (March 2024)</p>
+                <p>I however have recently updated my CV, so feel free to reference that. (August 2024)</p>
               </div>
             </div>
           </div>
