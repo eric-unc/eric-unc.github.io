@@ -66,7 +66,7 @@
         <p>I like to play video games. Minecraft is my favorite, especially when modded. Other games I have enjoyed include The Binding of Issac, Cube 2: Sauerbraten, the Civilization series, and Bloons Tower Defense 6.</p>
         <p>I am interested in international politics and affairs, and I keep up with world news closely. I like cats, and love my parents' cats, Trixie and Scout.</p>
         <h2 class="subtitle">Contact</h2>
-        <p>If you want to contact me, you can contact me through the address <code>u 1 6 4 3 3 6 4 (at) live . unc . edu</code> (<a href="javascript:" @click="copyEmail">copy</a>). This is my student email, but it is continually monitored outside the school semester. Email is my preferred means of initial contact.</p>
+        <p>If you want to contact me, you can contact me through the address <code>e r i c t s @ vt . edu</code> (<a href="javascript:" @click="copyEmail">copy</a>). This is my student email, but it is continually monitored outside the school semester. Email is my preferred means of initial contact.</p>
         <p>You can add me on <a href="https://www.linkedin.com/in/eric-cs/">LinkedIn</a>. You are welcome to contact me there, but I don't check it as often. Also, usually my information on LinkedIn is a bit dated.</p>
       </div>
     </section>
@@ -81,7 +81,7 @@ export default {
 
   methods: {
     copyEmail() {
-      let emailAddress = "u164" + "" + "33" + "64@live" + "." + "unc.edu";
+      let emailAddress = "eric" + "ts" + "@" + "vt.edu";
 
       navigator.clipboard.writeText(emailAddress).then(() => {
         // Successfully copied.
