@@ -27,7 +27,7 @@
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
                 <p>I was born in Charlotte, North Carolina, and raised in Weddington, North Carolina. I am currently a first-year PhD student at Virginia Tech, expecting to graduate in 2029.</p>
                 <p>Welcome to my website! It's a bit outdated now... whoops! I promise to update it eventually! (June 2023)</p>
-                <p>I however have recently updated my CV, so feel free to reference that. (August 2024)</p>
+                <p>I however have recently updated my CV, so feel free to reference that. (January 2025)</p>
               </div>
             </div>
           </div>
