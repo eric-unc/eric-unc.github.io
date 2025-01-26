@@ -8,5 +8,9 @@
   },
   "devDependencies": {
     "nuxt": "3.12.4"
+  },
+  "dependencies": {
+    "n": "^10.1.0",
+    "stable": "^0.1.8"
   }
 }
