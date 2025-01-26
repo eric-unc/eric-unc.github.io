@@ -1,5 +1,5 @@
 # Website
-This is my website! [Here](https://eric-unc.tech) is the front page. Previously it was a pretty "vanilla" website, using just [jQuery](https://github.com/jquery/jquery) for scripting, but now it is based on [Nuxt 3](https://github.com/nuxt/framework)/[Vue](https://vuejs.org/). It uses [Bulma](https://github.com/jgthms/bulma) for styling.
+This is my website! [Here](https://eric-unc.tech) is the front page. Previously it was a pretty "vanilla" website, using just [jQuery](https://github.com/jquery/jquery) for scripting, but now it is based on [Nuxt 3](https://github.com/nuxt/nuxt)/[Vue](https://vuejs.org/). It uses [Bulma](https://github.com/jgthms/bulma) for styling.
 
 ## Setup (for local testing)
 Make sure to install the dependencies:
