@@ -3,9 +3,12 @@
     <div class="navbar-menu is-active">
       <div class="navbar-start">
         <a href="/" class="navbar-item">Home</a>
+        <a href="/blog" class="navbar-item">Blog</a>
         <a href="/projects" class="navbar-item">Projects</a>
         <a href="/CV.pdf" class="navbar-item">Resume/CV</a>
       </div>
     </div>
   </nav>
 </template>
+<script setup lang="ts">
+</script>
