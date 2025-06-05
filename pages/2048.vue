@@ -88,36 +88,51 @@ export default {
 
   methods: {
     getTileImage(tile) {
+      let ret = "0.jpg"
       switch(tile){
         case 0: // TODO: don't remember why this is a thing
-          return "0.jpg"
+          ret = "0.jpg"
+          break
         case 2:
-          return "2.jpeg"
+          ret = "2.jpeg"
+          break
         case 4:
-          return "4.jpg"
+          ret = "4.jpg"
+          break
         case 8:
-          return "8.jpg"
+          ret = "8.jpg"
+          break
         case 16:
-          return "16.jpg"
+          ret = "16.jpg"
+          break
         case 32:
-          return "32.jpg"
+          ret = "32.jpg"
+          break
         case 64:
-          return "64.jpg"
+          ret = "64.jpg"
+          break
         case 128:
-          return "128.jpg";
+          ret = "128.jpg";
+          break
         case 256:
-          return "256.jpg"
+          ret = "256.jpg"
+          break
         case 512:
-          return "512.jpg"
+          ret = "512.jpg"
+          break
         case 1024:
-          return "1024.gif"
+          ret = "1024.gif"
+          break
         case 2048:
-          return "2048.jpg"
+          ret = "2048.jpg"
+          break
         case 4096:
-          return "4096.jpg"
+          ret = "4096.jpg"
+          break
         default:
-          return "0.jpg" // shouldnt get here
+          ret = "0.jpg" // shouldnt get here
       }
+      return "2048/" + ret
     },
     setup() {
       this.board = createEmptyBoard()
