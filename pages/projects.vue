@@ -87,7 +87,7 @@ const projects = [
         link: "https://ftb.fandom.com/wiki/FTB_Wiki",
         status: 'active',
         langs: ['mediawiki', 'web'],
-        desc: `The Official FTB Wiki is an online publicly edited wiki that documents the world of modded Minecraft, including mods, modpacks, and other third-party content for Minecraft. In 2014, I started documenting my own mod (Nuclear Control 2), and I got so far into documenting that I started documenting other people's mods. Now I'm an administrator, and I have over 50,000 edits on the wiki. I used to edit each day and make a lot of new articles, but nowadays I mostly just do administrative tasks. Contributing to the wiki has involved:
+        desc: `The Official FTB Wiki is an online publicly edited wiki that documents the world of modded Minecraft, including mods, modpacks, and other third-party content for Minecraft. In 2014, I started documenting my own mod (Nuclear Control 2), and I got so far into documenting that I started documenting other people's mods. Now I'm an administrator, and I have over 55,000 edits on the wiki. I used to edit each day and make a lot of new articles, but nowadays I mostly just do administrative tasks. Contributing to the wiki has involved:
         <ul>
             <li>Writing and editing content in an encyclopedic tone using MediaWiki.</li>
             <li>Analyzing Java (and rarely Scala/Kotlin) to obtain information for the wiki.</li>
@@ -197,7 +197,7 @@ const projects = [
         name: "SAP-1", // Dec
         status: 'inactive',
         langs: ['hardware'],
-        desc: "This was a hardware project to create <a href=\"https://eater.net/8bit\">an 8-bit computer</a>. If it is ever finished, I hope to upload many pictures of it. I originally started on it during the 2020 break, but haven't really touched it since. It's about 75% complete. You can see a picture of it <a href=\"computer.jpg\">here</a>. Project status: <span class=\"proj-abandoned-c\">On hiatus</span>."
+        desc: "This was a hardware project to create <a href=\"https://eater.net/8bit\">an 8-bit computer</a>. If it is ever finished, I hope to upload many pictures of it. I originally started on it during the 2020 break, but haven't really touched it since. It's about 75% complete. You can see a picture of it <a href=\"/computer.jpg\">here</a>. Project status: <span class=\"proj-abandoned-c\">On hiatus</span>."
       },
       {
         name: "BetterThanVim", // Dec

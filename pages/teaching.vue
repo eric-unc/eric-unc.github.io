@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info is-bold">
+    <section class="hero is-info">
       <div class="hero-head">
         <Navbar />
       </div>
@@ -12,14 +12,22 @@
     </section>
     <section class="section">
       <div class="content">
-        <p>I have served as an undergraduate teaching assistant in the UNC computer science department for 6 semesters. These are the classes I have been a UTA for:</p>
+        <p>As both a graduate and undergraduate teaching assistant, I have four years of experience teaching.</p>
+        <h2>Graduate Teaching Assistant (UNC Chapel Hill)</h2>
         <ul>
-          <li><strong>System Fundamentals (COMP 211, spring 2023)</strong>, under Professor Brent Munsell.</li>
-          <li><strong>Operating Systems (COMP 530, fall 2023)</strong>, under Professor Don Porter.</li>
-          <li><strong>System Fundamentals (COMP 211, spring 2022)</strong>, under Professor Ketan Mayer-Patel.</li>
-          <li><strong>System Fundamentals (COMP 211, fall 2021)</strong>, under Professor Brent Munsell. This semester, I was promoted to "lead LA", managing labs for the course. I created my own lab, the MIPS simulator lab, which has still been used to this day.</li>
-          <li><strong>System Fundamentals (COMP 211, spring 2021)</strong>, under Professor Brent Munsell.</li>
-          <li><strong>System Fundamentals (COMP 211, fall 2020)</strong>, under Professor Kris Jordan.</li>
+          <li><strong><a href="https://www.cs.unc.edu/~swali/comp520/">COMP 520: Compilers</a></strong> (spring 2024), with fellow graduate student Syed Ali.</li>
+          <li><strong>COMP 211: System Fundamentals</strong> (fall 2023), under Professor Brent Munsell. This was a split semester (I worked 10 hours for COMP 211, plus 10 hours for COMP 530).</li>
+          <li><strong><a href="https://www.cs.unc.edu/~porter/courses/comp530/f23/">COMP 530: Operating Systems</a></strong> (fall 2023), under Professor Don Porter.</li>
+        </ul>
+
+        <h2>Undergraduate Teaching Assistant (UNC Chapel Hill)</h2>
+        <ul>
+          <li><strong>COMP 211: System Fundamentals</strong> (spring 2023), under Professor Brent Munsell.</li>
+          <li><strong><a href="https://www.cs.unc.edu/~porter/courses/comp530/f22/">COMP 530: Operating Systems</a></strong> (fall 2022), under Professor Don Porter.</li>
+          <li><strong>COMP 211: System Fundamentals</strong> (spring 2022), under Professor Ketan Mayer-Patel.</li>
+          <li><strong>COMP 211: System Fundamentals</strong> (fall 2021), under Professor Brent Munsell. This semester, I was promoted to "lead UTA", managing labs for the course. I created a new lab, the MIPS simulator lab, which has still been used to this day.</li>
+          <li><strong>COMP 211: System Fundamentals</strong> (spring 2021), under Professor Brent Munsell.</li>
+          <li><strong>COMP 211: System Fundamentals</strong> (fall 2020), under Professor Kris Jordan. Notably, me and two other UTAs made a <a href="https://comp211-20f.github.io/">study website</a> for this course, which is still a useful systems reference.</li>
         </ul>
       </div>
     </section>

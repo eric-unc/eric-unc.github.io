@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info is-bold">
+    <section class="hero is-info">
       <div class="hero-head">
         <Navbar />
       </div>
@@ -14,8 +14,8 @@
       <div class="content">
         <p>This is my blog.</p>
         <ul>
-          <li><a href="/blog/deepseek-macpro-2009">March 2, 2025 - Can you run DeepSeek R1 on a 2009 Mac Pro?</a></li>
           <li><a href="/blog/deepseek-macpro-2009-part1point5">March 18, 2025 - Can you run DeepSeek R1 on a 2009 Mac Pro? - Part 1.5</a></li>
+          <li><a href="/blog/deepseek-macpro-2009">March 2, 2025 - Can you run DeepSeek R1 on a 2009 Mac Pro?</a></li>
         </ul>
       </div>
     </section>
