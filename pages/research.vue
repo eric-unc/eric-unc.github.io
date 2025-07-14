@@ -12,7 +12,7 @@
     </section>
     <section class="section">
       <div class="content">
-        <p>I have done some research. My research interests are mainly in computer architecture, operating systems, and security. Currently, I am most interested in trusted execution environments (TEEs), sandboxing and isolation, and heterogeneous computing.</p>
+        <p>I have done some research. My research interests are mainly in computer architecture, operating systems, and security. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, and heterogeneous computing.</p>
         <h2>Publications</h2>
         <ul>
           <li>Adaptive and Efficient Dynamic Memory Management for Hardware Enclaves
@@ -30,9 +30,9 @@
 
         <h2>Service</h2>
         <ul>
-          <li>ASPLOS AEC 2026</li>
-          <li>ASPLOS AEC 2025</li>
-          <li>ASPLOS AEC 2024</li>
+          <li><a href="https://sites.google.com/view/asplos26aec/home">ASPLOS AEC PC 2026</a></li>
+          <li><a href="https://sites.google.com/view/asplos25aec/home">ASPLOS AEC PC 2025</a></li>
+          <li><a href="https://sites.google.com/view/asplos24aec/home">ASPLOS AEC PC 2024</a></li>
         </ul>
 
         <h2>Research Projects</h2>
