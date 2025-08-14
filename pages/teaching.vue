@@ -12,9 +12,10 @@
     </section>
     <section class="section">
       <div class="content">
-        <p>As both a graduate and undergraduate teaching assistant, I have four years of experience teaching.</p>
-        <h2>Graduate Teaching Assistant (UNC Chapel Hill)</h2>
+        <p>As both a graduate and undergraduate teaching assistant, I have over four years of experience teaching.</p>
+        <h2>Graduate Teaching Assistant (UNC Chapel Hill/Virginia Tech)</h2>
         <ul>
+          <li><strong>CS 2114: Data Structures and Software Design</strong> (fall 2025), under Professor Margaret Ellis, Professor Mohammed Farghally, and fellow graduate student Vee Pettit.</li>
           <li><strong><a href="https://www.cs.unc.edu/~swali/comp520/">COMP 520: Compilers</a></strong> (spring 2024), with fellow graduate student Syed Ali.</li>
           <li><strong>COMP 211: System Fundamentals</strong> (fall 2023), under Professor Brent Munsell. This was a split semester (I worked 10 hours for COMP 211, plus 10 hours for COMP 530).</li>
           <li><strong><a href="https://www.cs.unc.edu/~porter/courses/comp530/f23/">COMP 530: Operating Systems</a></strong> (fall 2023), under Professor Don Porter.</li>

@@ -17,7 +17,7 @@
         <ul>
           <li>Adaptive and Efficient Dynamic Memory Management for Hardware Enclaves
           <br>
-          Vijay Dhanraj, Harpreet Singh Chawla, Tao Zhang, Daniel Manila, <strong>Eric Thomas Schneider</strong>, Erica Fu, Mona Vij, Chia-Che Tsai, Donald E. Porter
+          Vijay Dhanraj, Harpreet Singh Chawla, Daniel Manila, <strong>Eric Thomas Schneider</strong>, Erica Fu, Mona Vij, Chia-Che Tsai, Donald E. Porter
           <br>
           ACM International Systems and Storage Conference (SYSTOR), 2025. To appear. <a href="https://arxiv.org/pdf/2504.16251">Pre-published on arXiv</a>.</li>
 
