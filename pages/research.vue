@@ -15,11 +15,11 @@
         <p>I have done some research. My research interests are mainly in computer architecture, operating systems, and security. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, and heterogeneous computing.</p>
         <h2>Publications</h2>
         <ul>
-          <li>Adaptive and Efficient Dynamic Memory Management for Hardware Enclaves
+          <li><a href="https://dl.acm.org/doi/abs/10.1145/3757347.3759137">Adaptive and Efficient Dynamic Memory Management for Hardware Enclaves</a>
           <br>
           Vijay Dhanraj, Harpreet Singh Chawla, Daniel Manila, <strong>Eric Thomas Schneider</strong>, Erica Fu, Mona Vij, Chia-Che Tsai, Donald E. Porter
           <br>
-          ACM International Systems and Storage Conference (SYSTOR), 2025. To appear. <a href="https://arxiv.org/pdf/2504.16251">Pre-published on arXiv</a>.</li>
+          ACM International Systems and Storage Conference (SYSTOR), 2025.</li>
 
           <li><a href="/Mechanisms of Memory Protection.pdf">Mechanisms of Memory Protection</a>
           <br>
@@ -43,7 +43,7 @@
           <li>"Native Enclave" - for our <a href="https://andrewkwong.org/comp790-185.html">Research in Security</a> class project, I worked with Yulu Pan on porting <a href="https://github.com/keystone-enclave/keystone">Keystone</a>, a RISC-V TEE implementation, to uClinux (Linux without virtual memory), to try to explore how the idea of TEEs could be extended to become a first-class memory protection mechanism in a "native enclave" system. Unfortunately, Keystone is pretty tied to virtual memory, but I hope to revisit this idea for a future project.</li>
           <li><a href="https://github.com/ac-freeman/adder-codec-rs">ADΔER</a>. Under <a href="https://acfreeman.dev/">Andrew Freeman</a>, Professor Ketan Mayer-Patel, and <a href="https://www.cs.unc.edu/~montek/">Professor Montek Singh</a>, I contributed towards the ADΔER asyncronous video research software suite. In Rust, I contributed a transcoder bandwidth limiting feature, implemented an event logging feature for the Rust implementation of the DVS Fast algorithm, fixed a couple Windows-related ADΔER issues, and updated the CI (with GitHub Actions). I also did a survey paper. In summer 2023, I was funded by the Laboratory for Analytical Sciences (LAS) for this work.</li>
           <li><a href="https://github.com/NIRALUser/NeuroRuler">NeuroRuler</a>. Under <a href="https://www.cs.unc.edu/~styner/">Professor Martin Styner</a> (<a href="https://www.med.unc.edu/psych/research/niral/">NIRAL</a>), with a few other students, I helped create this research software, written in Python. Basically, using MRI data, it will calculate head circumference given a particular "slice" of the brain. The software has some options for rotation, smoothing, threshold, and a batch API via the command line. It is being used by some neuro imaging researchers in Martin's lab.</li>
-          <li><a href="https://github.com/gramineproject/gramine">Gramine</a> - Improving SGX Performance with Cooperative, Dynamic Page Management. Under <a href="https://www.cs.unc.edu/~porter/">Professor Donald Porter</a> (<a href="https://oscarlab.github.io/">OSCAR</a>), I contributed to this soon-to-be-published paper, mainly with writing and benchmarking.</li>
+          <li><a href="https://github.com/gramineproject/gramine">Gramine</a> - Improving SGX Performance with Cooperative, Dynamic Page Management. Under <a href="https://www.cs.unc.edu/~porter/">Professor Donald Porter</a> (<a href="https://oscarlab.github.io/">OSCAR</a>), I contributed to this paper mainly with writing and benchmarking.</li>
         </ul>
       </div>
     </section>
