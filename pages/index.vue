@@ -2,10 +2,7 @@
   <div>
     <div>
       <section class="hero is-info">
-        <div class="hero-head">
-          <Navbar />
-        </div>
-        <div class="hero-body">
+<div class="hero-body">
           <div class="container">
             <h1 class="title">Eric Schneider</h1>
             <h2 class="subtitle">PhD Student at Virginia Tech</h2>
@@ -15,14 +12,14 @@
     </div>
     <section class="section">
       <div class="container">
-        <div class="columns">
-          <div class="column is-narrow">
-            <figure class="image is-128x128">
-              <img src="/eric.png" class="is-rounded" alt="A picture of myself">
-            </figure>
-          </div>
-          <div class="column">
-            <div class="box">
+        <div class="box">
+          <div class="columns is-vcentered">
+            <div class="column is-narrow has-text-centered">
+              <figure class="image is-128x128">
+                <NuxtImg src="/eric.png" class="is-rounded" alt="A picture of myself" width="128" height="128" />
+              </figure>
+            </div>
+            <div class="column">
               <div class="content">
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
                 <p>I am currently a second-year computer science PhD student at Virginia Tech, expecting to graduate in 2029. Previously, I earned an MS (2024) and a BS (2023) from UNC Chapel Hill in computer science (MS/BS) and mathematics (BS).</p>
@@ -49,22 +46,21 @@
   </div>
 </template>
 
-<script>
-export default {
-  head: {
-    title: "Eric Schneider"
-  },
+<script setup>
+useSeoMeta({
+  title: 'Eric Schneider',
+  description: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and heterogeneous computing.',
+  ogTitle: 'Eric Schneider',
+  ogDescription: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and heterogeneous computing.',
+  ogImage: 'https://eric-unc.tech/eric.png',
+  ogUrl: 'https://eric-unc.tech/',
+  twitterCard: 'summary',
+})
 
-  methods: {
-    copyEmail() {
-      let emailAddress = "eric" + "ts" + "@" + "vt.edu";
-
-      navigator.clipboard.writeText(emailAddress).then(() => {
-        // Successfully copied.
-      }, () => {
-        console.error("Unable to write to clipboard!");
-      });
-    }
-  }
+function copyEmail() {
+  const emailAddress = "eric" + "ts" + "@" + "vt.edu";
+  navigator.clipboard.writeText(emailAddress).then(() => {}, () => {
+    console.error("Unable to write to clipboard!");
+  });
 }
 </script>

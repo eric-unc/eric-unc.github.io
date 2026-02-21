@@ -1,11 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info is-bold">
-      <div class="hero-head">
-        <Navbar />
-      </div>
-    </section>
-    <section class="section">
+<section class="section">
       <div class="content">
         <h1 class="title">I beat Fallout 1 on Steam Deck</h1>
         <p>The blog can't all be technical nonsense, now can it?</p>

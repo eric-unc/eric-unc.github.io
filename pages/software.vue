@@ -1,16 +1,14 @@
 <template>
   <div>
     <section class="hero is-info">
-      <div class="hero-head">
-        <Navbar />
-      </div>
-      <div class="hero-body">
+<div class="hero-body">
         <div class="container">
           <h1 class="title">Software</h1>
         </div>
       </div>
     </section>
     <section class="section">
+      <div class="container">
       <div class="content">
         <p>Since I started programming in 2014, I'm accumulated a large albeit odd set of projects that I have made or contributed to. Here is my "software portfolio".</p>
         <h2>Industry experience</h2>
@@ -38,8 +36,17 @@
         <h2>Potpourri</h2>
         <p>Here's a bunch of other random stuff I worked on that I think is cool: <a href="https://github.com/a8675309/HackNCSilentDisco0">an Android app for practicing Spanish or French</a> (made for my first hackathon), a <a href="https://github.com/eric-unc/401hackathon">game written with Java Swing</a> (for a class hackathon), <a href="https://github.com/eric-unc/a8-conway-the-gamer">Conway's Game of Life</a> (also using Java Swing), a <a href="https://globalgamejam.org/2020/games/breath-8">Unity/C# game</a> (for another hackathon), a <a href="https://github.com/eric-unc/MATH-383L-final">MATLAB project for a class</a>, a <a href="https://devpost.com/software/betterthanvim">primitive CLI editor written in Rust</a> (for a hackathon, later <a href="https://github.com/eric-unc/WorseThanVim">ported to C++</a>), a <a href="https://github.com/eric-unc/hacknc2021">calculator written in Rust</a> (for another hackathon, which you can still access <a href="https://eric-unc.tech/hacknc2021/">through Wasm</a>), and a <a href="https://github.com/eric-unc/magnum">small virtual machine written in Rust</a> (for a hackathon, which I actually was given first place for).</p>
       </div>
+      </div>
     </section>
   </div>
 </template>
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Software',
+  description: 'Software portfolio of Eric Schneider – compilers, operating systems, Minecraft mods, web projects, and more.',
+  ogTitle: 'Software – Eric Schneider',
+  ogDescription: 'Software portfolio including compilers, operating systems, Minecraft mods, and web projects.',
+  ogImage: 'https://eric-unc.tech/eric.png',
+  twitterCard: 'summary',
+})
 </script>

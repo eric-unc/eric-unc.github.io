@@ -1,10 +1,7 @@
 <template>
   <div>
     <section class="hero is-info is-bold">
-      <div class="hero-head">
-        <Navbar />
-      </div>
-      <div class="hero-body">
+<div class="hero-body">
         <div class="container">
           <h1 class="title">Projects</h1>
         </div>
@@ -56,7 +53,18 @@
   </div>
 </template>
 
-<script>
+<script setup>
+useSeoMeta({
+  title: 'Projects',
+  description: 'Hobby and open-source projects by Eric Schneider, including Minecraft mods, compilers, games, and more.',
+  ogTitle: 'Projects – Eric Schneider',
+  ogDescription: 'Hobby and open-source projects including Minecraft mods, compilers, games, and more.',
+  ogImage: 'https://eric-unc.tech/eric.png',
+  twitterCard: 'summary',
+})
+
+const filter = ref('none')
+
 // I'd really like to move this to a JSON file but that's a bit complicated.
 // This is organized by sections
 const projects = [
@@ -477,33 +485,19 @@ const projects = [
   }
 ]
 
-export default {
-  head: {
-    title: "Eric Schneider - Projects"
-  },
-
-  data() {
-    return {
-      filter: "none",
-      projects: projects,
-    }
-  },
-
-  methods: {
-    filterProjects(toFilter) {
-      switch (this.filter) {
-        case 'active':
-          return toFilter.filter(proj => proj.status === 'active')
-        case "none":
-          return toFilter
-        default: // lang filter
-          return toFilter.filter(proj => proj.langs.includes(this.filter))
-      }
-    },
-    setFilter(newFilter) {
-      this.filter = newFilter
-    }
+function filterProjects(toFilter) {
+  switch (filter.value) {
+    case 'active':
+      return toFilter.filter(proj => proj.status === 'active')
+    case 'none':
+      return toFilter
+    default: // lang filter
+      return toFilter.filter(proj => proj.langs.includes(filter.value))
   }
+}
+
+function setFilter(newFilter) {
+  filter.value = newFilter
 }
 </script>
 

@@ -10,7 +10,8 @@
     "nuxt": "3.19.0"
   },
   "dependencies": {
-    "n": "^10.1.0",
-    "stable": "^0.1.8"
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/sitemap": "^7.6.0",
+    "bulma": "^1.0.4"
   }
 }

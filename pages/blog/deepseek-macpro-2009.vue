@@ -1,11 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info is-bold">
-      <div class="hero-head">
-        <Navbar />
-      </div>
-    </section>
-    <section class="section">
+<section class="section">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro?</h1>
         <p>Some people call it the cheese grader. Others call it the trashcan Mac (although that's a more apt description for the <a href="https://en.wikipedia.org/wiki/Mac_Pro#Cylindrical_Mac_Pro_(2013)">2013 model</a>). I simply call it my computer.</p>

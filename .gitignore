@@ -11,3 +11,4 @@ dist
 # OS/IDE stuff
 .idea/*
 .DS_Store
+.claude
