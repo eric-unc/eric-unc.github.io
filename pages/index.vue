@@ -23,7 +23,7 @@
               <div class="content">
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
                 <p>I am currently a second-year computer science PhD student at Virginia Tech, expecting to graduate in 2029. Previously, I earned an MS (2024) and a BS (2023) from UNC Chapel Hill in computer science (MS/BS) and mathematics (BS).</p>
-                <p>My research interests are mainly in computer architecture, operating systems, and security. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, and heterogeneous computing.</p>
+                <p>My research interests are mainly in computer architecture, operating systems, security, and AI. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, heterogeneous computing, and AI systems.</p>
                 <p>Welcome to my website! I recently updated it and I hope to polish it a little more soon.</p>
               </div>
             </div>
