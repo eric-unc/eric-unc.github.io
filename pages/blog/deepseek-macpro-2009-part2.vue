@@ -6,6 +6,7 @@
       </div>
     </section>
     <section class="section">
+      <div class="container">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro? - Part 2</h1>
         <p>If you haven't read <a href="/blog/deepseek-macpro-2009">the first part</a> (or <a href="/blog/deepseek-macpro-2009-part1point5">part 1.5</a>), then go read it. The answer is yes.</p>
@@ -14,6 +15,7 @@
 
         <h2>Footnotes</h2>
         <p id="footnote-1">[1] idk.</p>
+      </div>
       </div>
     </section>
   </div>

@@ -1,6 +1,7 @@
 <template>
   <div>
 <section class="section">
+      <div class="container">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro? - Part 1.5</h1>
         <p>If you haven't read <a href="/blog/deepseek-macpro-2009">the first part</a>, then go read it. The answer is yes.</p>
@@ -117,6 +118,7 @@ upsets can occur depending on each season's dynamics.</code></pre>
         <p>I tried regenerating with GPT-4o, but it would only generate with o3-mini for some reason.</p>
         <p>Given access to current data, it might be interesting to see if a really smart AI could do some kind of statistical analysis that could predict edge experts; but, it seems unlikely. Sports are too unpredictable.</p>
         <p>Anyway, part 2 of this blog is still heavily work-in-progress, so you're going to have to wait.</p>
+      </div>
       </div>
     </section>
   </div>

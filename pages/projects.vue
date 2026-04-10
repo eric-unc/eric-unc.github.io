@@ -8,6 +8,7 @@
       </div>
     </section>
     <section class="section">
+      <div class="container">
       <div class="content">
         <p>This is a list of all of my projects. This list is sometimes outdated, and yes, it's very long. For a more succinct version, look at my resume instead. This is a very expanded version of that.</p>
         <p>This page was last updated on Janaury 2nd, 2023.</p>
@@ -34,8 +35,10 @@
         <br /> <!-- This is just to have a space under the button. -->
         <p>The difference between a project being discontinued, abandoned, or complete is somewhat philosophical rather than concrete, so there's just a filter in regard to what I'm actively working on.</p>
       </div>
+      </div>
     </section>
     <section class="section">
+      <div class="container">
       <div class="content" v-for="section in projects">
           <h3 class="subtitle">{{ section.title }}</h3>
           <ul>
@@ -48,6 +51,7 @@
               </span>. <span v-html="project.desc"></span>
             </li>
           </ul>
+      </div>
       </div>
     </section>
   </div>

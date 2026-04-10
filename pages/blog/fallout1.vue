@@ -1,6 +1,7 @@
 <template>
   <div>
 <section class="section">
+      <div class="container">
       <div class="content">
         <h1 class="title">I beat Fallout 1 on Steam Deck</h1>
         <p>The blog can't all be technical nonsense, now can it?</p>
@@ -26,6 +27,7 @@
         <p>Let's get to the good: this is just a great game. Once I started playing it, it was very hard to put it down. I loved exploring the world, I loved fighting when the fight was balanced, and I absolutely loved the art and atmosphere. I know some people don't love the art of old games like this one, but they're completely wrong. The art has far more soul and beauty than any triple A game released in the past few years. I don't want to see a remastered version of OG Fallout; it is perfect as is.</p>
         <p>I can't speak much about replayability, but I hope to one day <a href="https://www.reddit.com/r/classicfallout/comments/1d5xq6j/do_you_ever_do_low_intelligence_play_throughs_if/">play around a bit with different RPG attributes</a>. One of the cool things about Fallout is that you can try to play it a number of different ways, whether more combat-oriented, stealth-oriented, intelligence or charisma-oriented. As linked, <a href="https://www.youtube.com/watch?v=8CPijQ_LLGQ">high or low intelligence can make the dialogue and thus overall game completely different</a>.</p>
         <p>So anyway, you should play it too. You can get the <a href="https://store.steampowered.com/sub/45615/">Fallout Classic Collection</a> for $20, which includes Fallout, Fallout 2, and Fallout Tactics. But if you wait for a sale, you can get it for like 80% off. I hope to try Fallout 2 soon, but I expect I will become utterly addicted to it too, so I will put it off for now.</p>
+      </div>
       </div>
     </section>
   </div>

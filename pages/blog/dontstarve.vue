@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="section">
+      <div class="container">
       <div class="content">
         <h1 class="title">Can AI make a Don't Starve mod?</h1>
         <p>Between doing research, I've been playing a good amount of <a href="https://store.steampowered.com/app/219740/Dont_Starve/">Don't Starve</a>, an older indie game that I bought maybe a decade ago. It's a really good game, and I would recommend it to anyone who has time to sink.</p>
@@ -92,6 +93,7 @@
         </figure>
         <p>So yeah. Anyway, maybe in a couple years if these tools are better, I'll try this again. But for now, Claude is on my naughty list.</p>
         <p>By the way, I did not beat Fallout 2 on my Steam Deck; I almost finished the game but put it down after reaching the final boss fight.</p>
+      </div>
       </div>
     </section>
   </div>

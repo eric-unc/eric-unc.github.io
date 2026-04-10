@@ -1,6 +1,7 @@
 <template>
   <div>
 <section class="section">
+      <div class="container">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro?</h1>
         <p>Some people call it the cheese grader. Others call it the trashcan Mac (although that's a more apt description for the <a href="https://en.wikipedia.org/wiki/Mac_Pro#Cylindrical_Mac_Pro_(2013)">2013 model</a>). I simply call it my computer.</p>
@@ -348,6 +349,7 @@ clang++: error: linker command failed with exit code 1 (use -v to see invocation
         <p id="footnote-3">[3] Obviously, DeepSeek is using a different tokenizer than OpenAI, but I wasn't going to look too deeply into this.</p>
         <p id="footnote-4">[4] Again, I don't understand Ollama's architecture very well, so this is as best as I can explain it. Feel free to share a better description.</p>
         <p id="footnote-5">[5] Again I'm calculating the token numbers using OpenAI's tokenizer, so this is an approximation. According to the Ollama documentation, the JSON response from <code>curl</code> will output the actual number of tokens; however, for some reason, my Terminal truncated the output.</p>
+      </div>
       </div>
     </section>
   </div>
