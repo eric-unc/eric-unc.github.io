@@ -24,7 +24,7 @@
                 <p>Hello! My name is <strong>Eric Schneider</strong> (<em>he/him</em>).</p>
                 <p>I am currently a second-year computer science PhD student at Virginia Tech, expecting to graduate in 2029. Previously, I earned an MS (2024) and a BS (2023) from UNC Chapel Hill in computer science (MS/BS) and mathematics (BS).</p>
                 <p>My research interests are mainly in computer architecture, operating systems, security, and AI. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, heterogeneous computing, and AI systems.</p>
-                <p>Welcome to my website! I recently updated it and I hope to polish it a little more soon.</p>
+                <p>I am currently an intern at <a href="https://lucidcomputing.ai/">Lucid Computing</a>.</p>
               </div>
             </div>
           </div>
@@ -32,7 +32,8 @@
       </div>
     </section>
     <section class="section">
-      <div class="content">
+      <div class="container">
+        <div class="content">
         <h2>Background</h2>
         <p>I got into programming very early in middle school, and I loved making software (mostly Minecraft mods), which propelled me to major in computer science once I got to college. There, I refined my taste to a more general love of computer science, rather than just programming, and I grew particularly interested in systems, especially in computer architecture, compilers/programming languages, and operating systems. I took all the classes I could for those topics, but didn't want to stop there; hence, that is how I got into systems research. Currently, my research is focused on trusted execution environments (TEEs); see my <a href="/research">research page</a> for more information on past and present research.</p>
         <p>Outside of classes and academia, I have worked on many hobby projects, including quite a few hackathon entries. I have also worked in industry thrice as an intern, working for VMware (summer 2021 and 2022) and Nutanix (2024). See my <a href="/software">software page</a> for more information on all the many projects I have contributed towards. When it comes to programming, I have the most experience in Java and C, and some in Ruby, Rust, JavaScript, and plenty others. You can see my list of skills on my <a href="/CV.pdf">CV</a>. If using a language I haven't used for a while, I can be a bit rusty, but I can always adapt fast. I'm pretty flexible when it comes to languages and frameworks, since I've touched enough of everything to be able to adapt to whatever situation I need to.</p>
@@ -41,6 +42,7 @@
         <h2 class="subtitle">Contact</h2>
         <p>If you want to contact me, you can contact me through the address <code>e r i c t s</code>(at)<code>vt . edu</code> (<a href="javascript:" @click="copyEmail">copy</a>). This is my student email, but it is continually monitored outside the school semester. Email is my preferred means of initial contact.</p>
         <p>You can add me on <a href="https://www.linkedin.com/in/eric-cs/">LinkedIn</a>. You are welcome to contact me there, but I don't check it as often. Also, usually my information on LinkedIn is a bit dated.</p>
+        </div>
       </div>
     </section>
   </div>
