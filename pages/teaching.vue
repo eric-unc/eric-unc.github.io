@@ -16,6 +16,14 @@
 
         <div class="box mb-3">
           <div class="level is-mobile mb-1">
+			  <div class="level-left"><p><strong><a href="https://courses.cs.vt.edu/cs3214/fall2026">CS 3214: Computer Systems</a></strong></p></div>
+            <div class="level-right"><span class="tag is-info">Fall 2026</span></div>
+          </div>
+          <p>Under Professor Godmar Back, Professor Dan Williams, and Professor Steve Jian.</p>
+        </div>
+
+        <div class="box mb-3">
+          <div class="level is-mobile mb-1">
             <div class="level-left"><p><strong>CS 2114: Data Structures and Software Design</strong></p></div>
             <div class="level-right"><span class="tag is-info">Fall 2025</span></div>
           </div>
