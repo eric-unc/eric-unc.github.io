@@ -16,7 +16,7 @@
           <div class="columns is-vcentered">
             <div class="column is-narrow has-text-centered">
               <figure class="image is-128x128">
-                <NuxtImg src="/eric.png" class="is-rounded" alt="A picture of myself" width="128" height="128" />
+                <NuxtImg src="/eric-new.jpeg" class="is-rounded" alt="A picture of myself" width="128" height="128" />
               </figure>
             </div>
             <div class="column">
