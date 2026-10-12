@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+# Queue deploys so back-to-back pushes don't collide on GitHub Pages
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
