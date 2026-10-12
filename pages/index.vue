@@ -35,7 +35,7 @@
         <div class="content">
         <h2>Background</h2>
         <p>I got into programming very early in middle school, and I loved making software (mostly Minecraft mods), which propelled me to major in computer science once I got to college. There, I refined my taste to a more general love of computer science, rather than just programming, and I grew particularly interested in systems, especially in computer architecture, compilers/programming languages, and operating systems. I took all the classes I could for those topics, but didn't want to stop there; hence, that is how I got into systems research. Currently, my research is focused on trusted execution environments (TEEs); see my <a href="/research">research page</a> for more information on past and present research.</p>
-        <p>Outside of classes and academia, I have worked on many hobby projects, including quite a few hackathon entries. I have also worked in industry thrice as an intern, working for VMware (summer 2021 and 2022) Nutanix (2024), and <a href="https://lucidcomputing.ai/">Lucid Computing</a> (2026). See my <a href="/software">software page</a> for more information on all the many projects I have contributed towards. When it comes to programming, I have the most experience in Java and C, and some in Python, Ruby, Rust, JavaScript, and plenty others. You can see my list of skills on my <a href="/CV.pdf">CV</a>. If using a language I haven't used for a while, I can be a bit rusty, but I can always adapt fast. I'm pretty flexible when it comes to languages and frameworks, since I've touched enough of everything to be able to adapt to whatever situation I need to.</p>
+        <p>Outside of classes and academia, I have worked on many hobby projects, including quite a few hackathon entries. I have also worked in industry thrice as an intern, working for VMware (summer 2021 and 2022), Nutanix (2024), and <a href="https://lucidcomputing.ai/">Lucid Computing</a> (2026). See my <a href="/software">software page</a> for more information on all the many projects I have contributed towards. When it comes to programming, I have the most experience in Java and C, and some in Python, Ruby, Rust, JavaScript, and plenty others. You can see my list of skills on my <a href="/CV.pdf">CV</a>. If using a language I haven't used for a while, I can be a bit rusty, but I can always adapt fast. I'm pretty flexible when it comes to languages and frameworks, since I've touched enough of everything to be able to adapt to whatever situation I need to.</p>
         <p>Outside of academia and software, I love to exercise. I used to train for marathons (I've run seven), but after an injury and some hiatus, I am currently trying to transition towards triathlons. I also enjoy lifting weights. I occasionally like playing video games, especially Minecraft, reading the news, and cats.</p>
 
         <h2 class="subtitle">Contact</h2>
@@ -50,9 +50,9 @@
 <script setup>
 useSeoMeta({
   title: 'Eric Schneider',
-  description: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and heterogeneous computing.',
+  description: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and AI systems.',
   ogTitle: 'Eric Schneider',
-  ogDescription: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and heterogeneous computing.',
+  ogDescription: 'PhD student in computer science at Virginia Tech, researching trusted execution environments (TEEs), sandboxing, and AI systems.',
   ogImage: 'https://eric-unc.tech/eric.png',
   ogUrl: 'https://eric-unc.tech/',
   twitterCard: 'summary',
