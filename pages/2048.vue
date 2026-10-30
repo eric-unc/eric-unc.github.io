@@ -16,17 +16,19 @@
       <br />
       <div class="container">
         <table class="table is-fullwidth tile is-ancestor is-vertical">
-          <tr class="tile is-parent" v-for="row in board">
-            <td v-for="tile in row">
-              <div v-if="tile === 0" class="tile is-child image is-64x64 box"></div>
-              <div v-else-if="tile > 4096" class="tile is-child image is-64x64 box">
-                {{ tile }} <!-- this is unlikely, but you never know -->
-              </div>
-              <figure v-else class="tile image is-64x64">
-                <img :src="getTileImage(tile)" alt="A 2048 tile.">
-              </figure>
-            </td>
-          </tr>
+          <tbody>
+            <tr class="tile is-parent" v-for="row in board">
+              <td v-for="tile in row">
+                <div v-if="tile === 0" class="tile is-child image is-64x64 box"></div>
+                <div v-else-if="tile > 4096" class="tile is-child image is-64x64 box">
+                  {{ tile }} <!-- this is unlikely, but you never know -->
+                </div>
+                <figure v-else class="tile image is-64x64">
+                  <img :src="getTileImage(tile)" alt="A 2048 tile.">
+                </figure>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div class="container">
@@ -109,7 +111,7 @@ function getTileImage(tile) {
     default:
       ret = "0.jpg" // shouldnt get here
   }
-  return "2048/" + ret
+  return "/2048/" + ret
 }
 
 function setup() {
