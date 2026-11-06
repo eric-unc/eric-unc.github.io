@@ -1,11 +1,11 @@
 <template>
   <div>
 <section class="section">
-      <div class="container">
+      <div class="container is-max-tablet">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro?</h1>
         <p>Some people call it the cheese grader. Others call it the trashcan Mac (although that's a more apt description for the <a href="https://en.wikipedia.org/wiki/Mac_Pro#Cylindrical_Mac_Pro_(2013)">2013 model</a>). I simply call it my computer.</p>
-        <figure class="image" style="height: 30%; width: 30%;">
+        <figure class="image">
           <img src="/mac%20pro.jpg" alt="A picture of my 2009 Mac Pro.">
         </figure>
         <p>I have some other computers besides the Aluminum Tower, including an old ThinkPad, a newer, beefier ThinkPad that is my daily driver, and a Steam Deck. But, the now 16 year-old Silver Sentinel is my only desktop computer. I've been planning to get a new desktop for a while, but it's hard to justify dropping a few grand as a graduate student when I don't really do much gaming, and I already have both a Steam Deck and a Nintendo Switch that feel underused. So, it remains.</p>
@@ -20,7 +20,7 @@
         <p>As you can tell, some hardware components have been upgraded over time, although some have not. Also, I am using <a href="https://dosdude1.com/catalina/">a patch</a> to be able to run macOS Catalina. There is a <a href="https://dortania.github.io/OpenCore-Legacy-Patcher/">more recent project</a> which can run even more recent versions of macOS on hardware as old as mine, but I am not using it as of yet. While the project looks excellent, I don't really expect that trying to run the latest version of macOS on hardware as old as mine is going to be particularly stable.</p>
         <p>Besides, plenty of software can run on Catalina. While <a ref="https://brew.sh/">Homebrew</a> is no longer officially supported, it seems to continue to work. I've played lots of Minecraft, Civilization V and VI, and <a href="http://sauerbraten.org/">Cube 2: Sauerbraten</a> on my Tower of Power. I haven't tried it recently, but League of Legends plays fine too, as has JetBrain's IDEs, Eclipse, Firefox, and uhhh, Gimp. Discord also still works, even if my version is no longer officially supported. But I know what you're wondering: what about the cutting-edge, hyped-up applications of tomorrow? More specifically, <span class=" is-underlined ">can the 2009 Mac Pro run a state of the art reasoning large language model?</span></p>
         <p>Probably not, right? But, I was going to give it a shot. I started <a href="https://thinhdanggroup.github.io/guide-to-run-deepseek-r1-locally/">one of the first tutorials online</a>; the first step was to install <a href="https://ollama.com/">Ollama</a>, which is basically something between a package manager and a runtime environment for LLMs <a href="#footnote-1">[1]</a>. After pressing download, I immediately discovered Ollama was not supported for my version of macOS.</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/ollama.png" alt="A picture of the Ollama installation page on their website.">
         </figure>
         <p>Still, I decided to download it anyway. The installation launcher required admin permission. What could go wrong?</p>
@@ -275,11 +275,11 @@ Sure! What is 4 multiplied by 3? The answer is:
  😊
         </code></pre>
         <p>These questions finished pretty fast, although the last question took a minute or two. This is the graph that Activity Monitor produced:</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/gpu_graph1.png" alt="Activity Monitor GPU history graph with little activity.">
         </figure>
         <p>So, it looked like the GPU wasn't being used at all. To check that my tool was working, I played <a href="http://sauerbraten.org/">Cube 2: Sauerbraten</a> for a few minutes; the Sauerbraten engine is open source and known to use OpenGL. So, surely, it would appear on the GPU history window:</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/gpu_graph2.png" alt="Activity Monitor GPU history graph with plenty of activity.">
         </figure>
         <p>The conclusion should be obvious enough: Ollama is not using the GPU, and thus is only using the CPU. I triple-checked by running another query, asking DeepSeek to solve a linear differential equation, which took more than 10 minutes; no GPU spike occurred.</p>
@@ -301,7 +301,7 @@ deepseek-r1:latest    0a8c26691023    5.6 GB    44%/56% CPU/GPU    Less than a s
         <p>I already cooked up a pretty basic benchmark of solving a basic differential equation. Here is the <a href="https://gist.github.com/eric-unc/e3d998fb2a94abfded5b00c42a9e60ef">CPU response</a>, and here is <a href="https://gist.github.com/eric-unc/de7909b827565b63b1f5da1c1ba6c4b2">GPU response</a>.</p>
         <p>As it happens, it took 16 minutes and 24 seconds to produce the CPU response, and 20 minutes and 23 seconds to produce the GPU response. Each response was a bit different, though. The CPU response has 1366 tokens according to the <a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a> <a href="#footnote-3">[3]</a>, and the GPU response has 1483 tokens. So, the pure CPU version of Ollama produced roughly 1.388 tokens/second, while the GPU-accelerated Ollama produced 1.213 tokens/second. Possibly a regression.</p>
         <p>If you looked through <a href="https://github.com/ollama/ollama/issues/1016">the GitHub issue I mentioned</a>, this isn't a surprise. Supposedly, Metal is supported but not optimized for AMD GPUs. Still, something was weird. I checked the GPU history window of Activity Monitor:</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/gpu_graph3.png" alt="Activity Monitor GPU history graph with little activity, again.">
         </figure>
         <p>I though that this could be some kind of caching issue or something, so I installed the smaller (1.5b parameter) model and tested it instead. According to <code>ollama ps</code>, with it being small enough, the model was running 100% on the GPU. But while querying it with a math problem, Activity Monitor showed me no GPU activity, but plenty of CPU activity. The <a href="https://gist.github.com/eric-unc/ded12b1f42f4b0a46361e9a1d34c983a">Ollama logs</a> gave some clues. Part of the log states "new model will fit in available VRAM in single GPU, loading", which might make you think that the entire model would be put onto the GPU. But, the end of the log, compared to <a href="https://github.com/ollama/ollama/issues/1016#issuecomment-2080421245">other people's working log</a>, seemed to imply that it was just using the CPU after all.</p>
@@ -313,7 +313,7 @@ deepseek-r1:latest    0a8c26691023    5.6 GB    44%/56% CPU/GPU    Less than a s
         <p>At this point, I decided to upgrade my OS using the <a href="https://dortania.github.io/OpenCore-Legacy-Patcher/">OpenCore Legacy Patcher</a>. There's some kind of issue with USB support in the newer versions, so for now I'm just upgrading two versions up, to macOS Monterey. When I first examined OpenCore Legacy many years ago, it was much more complicated and required a lot more steps. But fortunately, as the project matured, the process is a lot simpler. I needed a USB stick, and just needed to press a few buttons in their GUI.</p>
         <p>Anyway, during the boot part, OpenCore Legacy froze. I wasn't sure if it was just slow, so I left it running overnight, and it didn't make any progress. I thought I might have just bricked my computer, but after a couple restarts I was able to get back to the (not upgraded) OS. I thought OpenCore Legacy might just be broken for my system, but I tried it again, and it seemed to be installing. But then, it appeared to be following the same step again and again.</p>
         <p>But, I left it alone for many hours, came back to it later, and voila.</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/new%20macos.png" alt="macOS on Monterey.">
         </figure>
         <p>Post patch, the wifi connection did not work. After some restarting, I did get a connection though. However, I could not open a second wifi connection, which I previously could. My wifi card was an upgrade not officially supported by Apple, so who knows.</p>
@@ -330,7 +330,7 @@ clang++: error: linker command failed with exit code 1 (use -v to see invocation
         <p>Honestly, I don't know why updating the OS fixed my errors. I thought that I was going to have to switch from using LLVM's implementation of libc to Apple's, since I thought that might be the root of my problems, but nope. But it was working!</p>
         <p>So, how does GPU-powered DeepSeek R1 compare? I threw it my previous differential equation benchmark, and it produced <a href="https://gist.github.com/eric-unc/abaf296e62946db603048a7ff63767b0#file-response3-pretty-txt">this</a> after 22 minutes 11 seconds, producing 1.266 tokens/second <a href="#footnote-5">[5]</a>.</p>
         <p>Recall that it took 16-20 minutes to answer this question previously, with about 1.2-1.4 tokens generated per second. So, we're not getting better results. But, in the very least, I could see that Ollama was actually using my GPU:</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/gpu_graph4.png" alt="Activity Monitor GPU history graph with some activity.">
         </figure>
         <p>Yippee.</p>
@@ -356,3 +356,9 @@ clang++: error: linker command failed with exit code 1 (use -v to see invocation
 </template>
 <script setup lang="ts">
 </script>
+
+<style scoped>
+.content {
+  overflow-wrap: anywhere;
+}
+</style>

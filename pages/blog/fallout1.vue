@@ -1,16 +1,16 @@
 <template>
   <div>
 <section class="section">
-      <div class="container">
+      <div class="container is-max-tablet">
       <div class="content">
         <h1 class="title">I beat Fallout 1 on Steam Deck</h1>
         <p>The blog can't all be technical nonsense, now can it?</p>
         <p>After ~36 hours, I beat Fallout 1 on my Steam Deck. (Warning: some spoilers ahead for this ~28 year old game.)</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/fallout1-1.jpg" alt="Fallout 1 death screen.">
         </figure>
         <p>Whoops, wrong picture.</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/fallout1-2.jpg" alt="Fallout 1 win screen.">
         </figure>
         <p>I apologize for the iPhone picture instead of proper screenshots. I was too lazy to figure out how to take screenshots on Steam Deck and then figure out how to export them.</p>
@@ -20,7 +20,7 @@
         <p>Another pain, on the Steam Deck particularly, was playing without a mouse, and on a small screen. Most of the GUI elements were pretty small and have to be accessed using the mouse, and using the Steam Deck trackpad was annoying for it. Trying to carefully move the mouse over a tiny button again and again was incredibly frustrating... until it wasn't. After doing it enough, I got quite good at clicking the tiny buttons.</p>
         <p>So, the gameplay takes some effort to understand, and the game has some accessibility difficulties. But the most annoying thing is the occasional bugginess. For example, there's a few opportunities for your NPC companions <a href="https://www.reddit.com/r/classicfallout/comments/1d5k57i/images_that_are_painful_to_fallout_fans_and/">to get you stuck</a>. It's not just this bridge; I got stuck once or twice in tight indoor areas because of them cornering me.</p>
         <p>Companion NPCs are also just dumb. Beyond the early game, they tend to get in the way more often than they help. There are some mods to fix them, but obviously I didn't look into mods until I beat the game. But there was one bug that really did break the game:</p>
-        <figure class="image" style="height: 50%; width: 50%;">
+        <figure class="image">
           <img src="/fallout1-3.jpg" alt="Fallout 1 bug.">
         </figure>
         <p>I don't know how I triggered this bug, but once I did, my save was corrupted. I could restore the save, but I couldn't leave the square I was in without getting the same crash again and again. So I had to restart. Luckily, this was my only game-breaking bug.</p>
