@@ -1,7 +1,7 @@
 <template>
   <div>
 <section class="section">
-      <div class="container">
+      <div class="container is-max-tablet">
       <div class="content">
         <h1 class="title">Can you run DeepSeek R1 on a 2009 Mac Pro? - Part 1.5</h1>
         <p>If you haven't read <a href="/blog/deepseek-macpro-2009">the first part</a>, then go read it. The answer is yes.</p>

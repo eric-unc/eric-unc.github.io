@@ -1,10 +1,10 @@
 <template>
   <div>
     <section class="section">
-      <div class="container">
+      <div class="container is-max-tablet">
         <div class="content">
           <h1 class="title">A few principles on agent sandboxing</h1>
-          <figure class="image" style="height: 35%; width: 35%;">
+          <figure class="image">
             <img src="/not%20surprised.png" alt="A tweet describing agents using CPU cache as a covert channel.">
           </figure>
           <p>I saw this screenshot of a tweet on Reddit, and a friend sent me <a href="https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/">an article</a> discussing this issue, which is really just summarizing OpenAI's <a href="https://openai.com/index/securing-our-frontier-model-training-environment/">recent blog post</a>.</p>
