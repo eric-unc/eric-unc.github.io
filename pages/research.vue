@@ -10,7 +10,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <p>I have done some research. My research interests are mainly in computer architecture, operating systems, and security. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, and heterogeneous computing.</p>
+          <p>I have done some research. My research interests are mainly in computer architecture, operating systems, security, and AI. More specifically, I am currently most interested in trusted execution environments (TEEs), sandboxing and isolation, heterogeneous computing, AI systems, and AI safety, security, and privacy</p>
           <h2>Publications</h2>
           <div class="card mb-4">
             <div class="card-content p-4">
